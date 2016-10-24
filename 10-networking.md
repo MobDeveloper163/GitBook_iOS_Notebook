@@ -4,3 +4,7 @@ NSURLConnection
 
 发送同步请求
 
+
+
+
+
