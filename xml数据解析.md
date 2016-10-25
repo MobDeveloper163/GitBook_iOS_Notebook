@@ -15,15 +15,12 @@ iOS上的解析方式，速度快，占用内存小，只读；
 5. 直到最后一个节点，解析结束
 
 **SAX解析**
+
 ```c
 NSXMLParser
 ```
 
-### DOM解析
+### DOM（Document Object Model）文档对象模型解析
 
 Mac上的解析方式，解析过程中，占用内存大，可读和写；iOS默认不支持DOM解析，如果想支持DOM解析，需要使用第三方框架：GData、KissXML
-
-
-
-
 
