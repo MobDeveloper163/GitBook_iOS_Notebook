@@ -23,7 +23,7 @@
     * 数据解析
         * [XML数据解析](xml数据解析.md)
         * [JSON数据解析](json数据解析.md)
-    * [GET&POST请求](getpost请求.md)
+    * [HTTP请求](getpost请求.md)
     * NSURLConnection
     * [注意事项](注意事项.md)
 * Optimization
