@@ -14,11 +14,15 @@
 
 形容词：adjective
 
-同名、化名： _aliase_ 
+同名、化名： _aliase_
 
 专用术语：Terminology
 
+一元运算符： unary Operators
 
+二元运算符： binary Operators
+
+三元运算符： ternary Operators
 
 Swift中的nil和OC中的nil不同。在OC中，nil是一个不存在的对象的指针。在Swift中nil不是指针，而是一个确定的类型的值不存在。任意的可选类型都可以设置为nil，不光对象类型。
 
