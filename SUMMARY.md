@@ -2,8 +2,8 @@
 
 * [简介](README.md)
 * [C语言](chapter1.md)
-    * [Runtime](runtime.md)
 * [Objective-C](02-objective-c.md)
+    * [Runtime](runtime.md)
 * [Swift](swift.md)
 * [algorithm](10-algorithm.md)
 * Design Pattern
@@ -42,4 +42,7 @@
     * [优雅的使用计算机](优雅的使用计算机.md)
 * 优秀博客收集
     * [网络](网络.md)
+* [Developer Tools](developer-tools.md)
+    * [Xcode](xocdel.md)
+    * Document
 
