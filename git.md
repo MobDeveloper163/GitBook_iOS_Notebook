@@ -9,17 +9,113 @@
 
 ## 配置和初始化仓库
 
-    如果从现有的工程中使用git追踪文件，你需要到工程的文件夹输入：
+如果从现有的工程中使用git追踪文件，你需要到工程的文件夹输入：
 
 ```
 git init
 ```
 
-假如
+如果从远程服务器获取克隆仓库，你需要输入git clone \[url\] 。比如从github克隆开源中国客户端：
+
+```
+git clone https://github.com/jimneylee/JLOSChina-iPhone.git
+```
 
 ## 开始和停止追踪文件
 
+记住在你的工作目录中的文件有两种状态：跟踪的（tracked）和未被跟踪的（untracked）
+
+![](/assets/git文件的生命周期.png)
+
+查看文件的状态
+
+```
+git status
+```
+
+追踪文件,比如追踪README.txt
+
+```
+git add README.txt
+```
+
+```
+git add README.txt
+```
+
 ## 组织和提交文件更新
+
+如果修改了之前已经追踪的文件，也就是一个状态是tracked的文件时，比如CONTRIBUTING.md为tracked的状态，修改之后再使用git status命令,此时的内容如下：
+
+> $ git status
+> 
+> On branch master
+> 
+> Your branch is up-to-date with 'origin\/master'.
+> 
+> Changes to be committed:
+> 
+> \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> 
+> new file: README
+> 
+> Changes not staged for commit:（意思是说工作目录中被追踪的文件已更新，但是还没有组织）
+> 
+> \(use "git add &lt;file&gt;..." to update what will be committed\)
+> 
+> \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> 
+> modified: CONTRIBUTING.md
+
+Changes not staged for commit:（意思是说工作目录中被追踪的文件已更新，但是还没有组织）。使用git add命令来组织这些文件。git add是一个多功能命令。你是用它来追踪一个新文件，组织文件，以及做其他的事情，比如把冲有突的文件标记为已解决。把git add理解为“把内容添加到下一次提交”比“把文件添加到工程”或许更有帮助。此时我们使用git add命令来组织CONTRIBUTING.md文件，再运行git status命令。
+
+> **$** git add CONTRIBUTING.md
+> 
+> **$** git status
+> 
+> On branch master
+> 
+> Your branch is up-to-date with 'origin\/master'.
+> 
+> Changes to be committed:
+> 
+> \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> 
+> new file: README
+> 
+> modified: CONTRIBUTING.md
+
+假如此时在提交之前，你又对这个文件做了一次修改。此时再运行git status 命令，结果如下：
+
+> **$** git status
+> 
+> On branch master
+> 
+> Your branch is up-to-date with 'origin\/master'.
+> 
+> Changes to be committed:（staged状态）
+> 
+>  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> 
+> 
+> 
+>  new file: README
+> 
+>  modified: CONTRIBUTING.md
+> 
+> 
+> 
+> Changes not staged for commit:（为staged状态）
+> 
+>  \(use "git add &lt;file&gt;..." to update what will be committed\)
+> 
+>  \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> 
+> 
+> 
+>  modified: CONTRIBUTING.md
+
+
 
 ## 创建忽略文件
 
