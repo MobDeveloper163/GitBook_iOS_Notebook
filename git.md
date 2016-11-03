@@ -335,8 +335,6 @@ $ git add README
 > 
 > \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
 > 
-> 
-> 
 > modified: CONTRIBUTING.md
 
 它非常明确的告诉你怎样忽略你做出的更改，按照它说的做
@@ -349,13 +347,37 @@ $ git add README
 > 
 > Changes to be committed:
 > 
->  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> \(use "git reset HEAD &lt;file&gt;..." to unstage\)
 
+renamed: README.md -&gt; README
 
+**重要**
 
+明白git checkout --&lt;file&gt;是危险的命令是非常重要的。你对文件做的所有的修改都会消失 —Git仅仅复制一个文件覆盖它。不要用这个命令，除非你确实知道你不需要这个文件。
 
-
- renamed: README.md -&gt; README
+记住任何提交到Git中的文件都可以被恢复。然而任何你没有提交的文件一旦丢失就不能被找回。
 
 ## 从远程仓库拉取和推送
+
+### 远程工作
+
+git fetch 只从远程服务器获取文件，但是不与本地的文件合并
+
+git pull从远程服务器获取文件，并且与本地文件合并
+
+git push origin master（origin远程服务器的短名称 master是分支名称）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
