@@ -1,6 +1,6 @@
 # Git的基本使用
 
-## 创建Git仓库
+## 创建Git仓库 
 
 ### 创建Git仓库有两种途径
 
@@ -471,11 +471,7 @@ Git可以在历史纪录里重要的地方添加标签。通常人们使用这�
 > 
 > Date: Sat May 3 20:19:12 2014 -0700
 > 
-> 
-> 
 > my version 1.4
-> 
-> 
 > 
 > commit ca82a6dff817ec66f44342007202690a93763949
 > 
@@ -483,9 +479,7 @@ Git可以在历史纪录里重要的地方添加标签。通常人们使用这�
 > 
 > Date: Mon Mar 17 21:52:11 2008 -0700
 > 
-> 
-> 
->  changed the version number
+> changed the version number
 
 ### 在提交之后添加标签
 
@@ -535,8 +529,6 @@ $ git tag -a v1.2 9fceb02
 > 
 > v1.5
 > 
-> 
-> 
 > **$** git show v1.2
 > 
 > tag v1.2
@@ -544,8 +536,6 @@ $ git tag -a v1.2 9fceb02
 > Tagger: Scott Chacon &lt;schacon@gee-mail.com&gt;
 > 
 > Date: Mon Feb 9 15:32:16 2009 -0800
-> 
-> 
 > 
 > version 1.2
 > 
@@ -555,9 +545,7 @@ $ git tag -a v1.2 9fceb02
 > 
 > Date: Sun Apr 27 20:43:35 2008 -0700
 > 
-> 
-> 
->  updated rakefile
+> updated rakefile
 > 
 > ...
 
@@ -579,7 +567,7 @@ git push默认不把标签传送到服务器。你必须在创建标签之后，
 > 
 > To git@github.com:schacon\/simplegit.git
 > 
->  \* \[new tag\] v1.5 -&gt; v1.5
+> \* \[new tag\] v1.5 -&gt; v1.5
 
 如果你一次需要推送多个标签你可以使用tags标签：
 
@@ -593,9 +581,9 @@ git push默认不把标签传送到服务器。你必须在创建标签之后，
 > 
 > To git@github.com:schacon\/simplegit.git
 > 
->  \* \[new tag\] v1.4 -&gt; v1.4
+> \* \[new tag\] v1.4 -&gt; v1.4
 > 
->  \* \[new tag\] v1.4-lw -&gt; v1.4-lw
+> \* \[new tag\] v1.4-lw -&gt; v1.4-lw
 
 ### 拉取标签
 
