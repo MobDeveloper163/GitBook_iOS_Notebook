@@ -169,6 +169,34 @@ $ git commit -a -m 'added new benchmarks'
 
 从Git移除一个文件，你必须从tracked文件中移除（更准确的是从你的staging区域移除），然后再提交。git rm命令做这个事情，并从你的工作目录移除这个文件，因此在下一次提交时，你不会看到一个它作为untracked file出现。
 
+如果你仅仅从工作目录中移除文件，git的状态输出为“changed but not updated”,文件已更改但是尚未更新（也就是unstaged状态）。
+
+> **$** rm PROJECTS.md（仅仅从工作目录移除，尚未从staging area移除）
+> 
+> **$** git status
+> 
+> On branch master
+> 
+> Your branch is up-to-date with 'origin\/master'.
+> 
+> Changes not staged for commit:
+> 
+>  \(use "git add\/rm &lt;file&gt;..." to update what will be committed\)
+> 
+>  \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> 
+> 
+> 
+> 
+> 
+>  deleted: PROJECTS.md
+> 
+> 
+> 
+> 
+> 
+> no changes added to commit \(use "git add" and\/or "git commit -a"\)
+
 ## 浏览工程历史记录
 
 ## 从远程仓库拉取和推送
