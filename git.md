@@ -361,17 +361,13 @@ renamed: README.md -&gt; README
 
 ### 远程工作
 
+git remote 显示所有的远程服务器的短名称
+
 git fetch 只从远程服务器获取文件，但是不与本地的文件合并
 
 git pull从远程服务器获取文件，并且与本地文件合并
 
 git push origin master（origin远程服务器的短名称 master是分支名称）
-
-
-
-
-
-
 
 
 
