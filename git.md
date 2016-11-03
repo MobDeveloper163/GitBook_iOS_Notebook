@@ -359,21 +359,249 @@ renamed: README.md -&gt; README
 
 ## 从远程仓库拉取和推送
 
-### 远程工作
+## 远程工作
 
-git remote 显示所有的远程服务器的短名称
+### git remote 显示所有的远程服务器的短名称
 
-git fetch 只从远程服务器获取文件，但是不与本地的文件合并
+> **$** git remote
+> 
+> origin （连接到的服务器的短名称）
 
-git pull从远程服务器获取文件，并且与本地文件合并
+### git remote -v 显示所有远程服务器的完整url地址
+
+> **$** git remote -v （连接到的服务器的短名称和url地址）
+> 
+> origin https:\/\/github.com\/schacon\/ticgit \(fetch\)（从服务器读取数据的url地址）
+> 
+> origin https:\/\/github.com\/schacon\/ticgit \(push\) （向服务器写入数据的url地址）
+
+### 添加远程仓库
+
+> **$** git remote add pb https:\/\/github.com\/paulboone\/ticgit
+> 
+> **$** git remote -v
+
+### 从远程服务器拉取数据
+
+git fetch  \[remote-name\] 从远程服务器获取所有的本地没有的数据。之后你会拥有远程所有的分支，可以在任意时间检查和合并。fetch只从服务器只下载数据到本地仓库。它不会自动合并或修改你任何的文件。你必须在你准备时手动合并。
+
+如果你当前的分支设置了跟踪远程分支，你可以使用git pull命令，自动fetch和合并远程分支和本地分支。
+
+### 推送数据到服务器
 
 git push origin master（origin远程服务器的短名称 master是分支名称）
 
+如果在你push数据到服务器的时候，其他人已经先push了文件到服务器，此时你的push操作会被拒绝。因此你需要先fetch，并且合并到你自己的文件中，然后才能push。
 
+### 查看远程
 
+```
+git remote show origin
+```
 
+### 移除和重命名远程服务器
 
+```
+$ git remote rename pb paul（把pb命名为paul）
+```
 
+```
+$ git remote rm paul（移除paul）
+```
 
+## 标签
 
+Git可以在历史纪录里重要的地方添加标签。通常人们使用这个功能 标记发布点（v1.0等等）。
+
+### 列出所有的标签
+
+> **$** git tag
+> 
+> v0.1
+> 
+> v1.3
+
+你可以使用特定的模式查找标签：
+
+> **$** git tag -l "v1.8.5\*"
+> 
+> v1.8.5
+> 
+> v1.8.5-rc0
+> 
+> v1.8.5-rc1
+> 
+> v1.8.5-rc2
+> 
+> v1.8.5-rc3
+> 
+> v1.8.5.1
+> 
+> v1.8.5.2
+> 
+> v1.8.5.3
+> 
+> v1.8.5.4
+> 
+> v1.8.5.5
+
+### 创建标签
+
+一个轻量级的标签像一个不变的分支 —仅仅是一个具体提交的指向。
+
+### Anotated Tags
+
+> **$** git tag -a v1.4 -m "my version 1.4"
+> 
+> **$** git tag
+> 
+> v0.1
+> 
+> v1.3
+> 
+> v1.4
+
+### 使用git show 命令查看创建标签时一起提交的数据：
+
+> **$** git show v1.4
+> 
+> tag v1.4
+> 
+> Tagger: Ben Straub &lt;ben@straub.cc&gt;
+> 
+> Date: Sat May 3 20:19:12 2014 -0700
+> 
+> 
+> 
+> my version 1.4
+> 
+> 
+> 
+> commit ca82a6dff817ec66f44342007202690a93763949
+> 
+> Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+> 
+> Date: Mon Mar 17 21:52:11 2008 -0700
+> 
+> 
+> 
+>  changed the version number
+
+### 在提交之后添加标签
+
+如果提交的历史日志如下：
+
+> **$** git log --pretty=oneline
+> 
+> 15027957951b64cf874c3557a0f3547bd83b3ff6 Merge branch 'experiment'
+> 
+> a6b4c97498bd301d84096da251c98a07c7723e65 beginning write support
+> 
+> 0d52aaab4479697da7686c15f77a3d64d9165190 one more thing
+> 
+> 6d52a271eda8725415634dd79daabbc4d9b6008e Merge branch 'experiment'
+> 
+> 0b7434d86859cc7b8c3d5e1dddfed66ff742fcbc added a commit function
+> 
+> 4682c3261057305bdd616e23b64b0857d832627b added a todo file
+> 
+> 166ae0c4d3f420721acbb115cc33848dfcc2121a started write support
+> 
+> 9fceb02d0ae598e95dc970b74767f19372d61af8 updated rakefile
+> 
+> 964f16d36dfccde844893cac5b347e7b3d44abbc commit the todo
+> 
+> 8a5cbc430f1a9c3d00faaeffd07798508422908a updated readme
+
+现在，假设你在“updated rakefile”的地方忘记添加“V1.2”标签。你可以这样追加：
+
+```
+$ git tag -a v1.2 9fceb02
+```
+
+可以看到你已经追加了标签
+
+> **$** git tag
+> 
+> v0.1
+> 
+> v1.2
+> 
+> v1.3
+> 
+> v1.4
+> 
+> v1.4-lw
+> 
+> v1.5
+> 
+> 
+> 
+> **$** git show v1.2
+> 
+> tag v1.2
+> 
+> Tagger: Scott Chacon &lt;schacon@gee-mail.com&gt;
+> 
+> Date: Mon Feb 9 15:32:16 2009 -0800
+> 
+> 
+> 
+> version 1.2
+> 
+> commit 9fceb02d0ae598e95dc970b74767f19372d61af8
+> 
+> Author: Magnus Chacon &lt;mchacon@gee-mail.com&gt;
+> 
+> Date: Sun Apr 27 20:43:35 2008 -0700
+> 
+> 
+> 
+>  updated rakefile
+> 
+> ...
+
+### 共享标签
+
+git push默认不把标签传送到服务器。你必须在创建标签之后，明确地推送标签到服务器。
+
+> **$** git push origin v1.5
+> 
+> Counting objects: 14, done.
+> 
+> Delta compression using up to 8 threads.
+> 
+> Compressing objects: 100% \(12\/12\), done.
+> 
+> Writing objects: 100% \(14\/14\), 2.05 KiB \| 0 bytes\/s, done.
+> 
+> Total 14 \(delta 3\), reused 0 \(delta 0\)
+> 
+> To git@github.com:schacon\/simplegit.git
+> 
+>  \* \[new tag\] v1.5 -&gt; v1.5
+
+如果你一次需要推送多个标签你可以使用tags标签：
+
+> **$** git push origin --tags
+> 
+> Counting objects: 1, done.
+> 
+> Writing objects: 100% \(1\/1\), 160 bytes \| 0 bytes\/s, done.
+> 
+> Total 1 \(delta 0\), reused 0 \(delta 0\)
+> 
+> To git@github.com:schacon\/simplegit.git
+> 
+>  \* \[new tag\] v1.4 -&gt; v1.4
+> 
+>  \* \[new tag\] v1.4-lw -&gt; v1.4-lw
+
+### 拉取标签
+
+你并不能针真的从git拉取标签，因为它们不能被移动。如果你想在工作目录中放一个特定的版本，看起来像指定的标签，你可以在特定的标签创建一个分支：
+
+> **$** git checkout -b version2 v2.0.0
+> 
+> Switched to a new branch 'version2'
 
