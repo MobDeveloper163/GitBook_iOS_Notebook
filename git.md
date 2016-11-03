@@ -203,13 +203,9 @@ $ git commit -a -m 'added new benchmarks'
 > 
 > Changes to be committed:
 > 
->  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> \(use "git reset HEAD &lt;file&gt;..." to unstage\)
 > 
-> 
-> 
-> 
-> 
->  deleted: PROJECTS.md
+> deleted: PROJECTS.md
 
 在下一次提交的时候，这个文件就没了，也不会再被tracked.假如你已经更改了文件并且添加到了索引中，你必须使用-f选项强制移除。这是一种安全特性，防止数据还没有在快照中记录就被意外删除，删除后不能从Git恢复。
 
@@ -229,9 +225,71 @@ $ git rm log/\*.log（移除log文件夹下所有的.log文件）
 $ git rm \*~（移除所有文件名以~结尾的文件）
 ```
 
+### 移动文件
 
+如果你想重新命名一个文件，你可以像这样运行：
+
+```
+$ git mv file_from file_to
+```
+
+然而这个命令相当于下面的命令
+
+```
+$ gir mv README.md README
+$ git rm README.md
+$ git add README
+```
 
 ## 浏览工程历史记录
+
+### 查看提交历史
+
+当你创建了若干的提交，或者你克隆了存在提交历史的仓库后，你可能希望会过去查看到底发生了什么。最基本。最强大的工具是运行git log命令
+
+> **$** git log
+> 
+> commit ca82a6dff817ec66f44342007202690a93763949
+> 
+> Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+> 
+> Date: Mon Mar 17 21:52:11 2008 -0700
+> 
+> 
+> 
+>  changed the version number
+> 
+> 
+> 
+> commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+> 
+> Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+> 
+> Date: Sat Mar 15 16:40:33 2008 -0700
+> 
+> 
+> 
+>  removed unnecessary test
+> 
+> 
+> 
+> commit a11bef06a3f659402fe7563abf99ad00de2209e6
+> 
+> Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+> 
+> Date: Sat Mar 15 10:31:28 2008 -0700
+> 
+> 
+> 
+>  first commit
+
+### 撤销提交
+
+> **$** git commit -m 'initial commit'
+> 
+> **$** git add forgotten\_file
+> 
+> **$** git commit --amend（第二次提交会覆盖第一次提交，Git只记录第二次的提交结果）
 
 ## 从远程仓库拉取和推送
 
