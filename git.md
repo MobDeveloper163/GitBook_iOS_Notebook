@@ -255,11 +255,7 @@ $ git add README
 > 
 > Date: Mon Mar 17 21:52:11 2008 -0700
 > 
-> 
-> 
->  changed the version number
-> 
-> 
+> changed the version number
 > 
 > commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
 > 
@@ -267,11 +263,7 @@ $ git add README
 > 
 > Date: Sat Mar 15 16:40:33 2008 -0700
 > 
-> 
-> 
->  removed unnecessary test
-> 
-> 
+> removed unnecessary test
 > 
 > commit a11bef06a3f659402fe7563abf99ad00de2209e6
 > 
@@ -279,9 +271,7 @@ $ git add README
 > 
 > Date: Sat Mar 15 10:31:28 2008 -0700
 > 
-> 
-> 
->  first commit
+> first commit
 
 ### 撤销提交
 
@@ -290,6 +280,72 @@ $ git add README
 > **$** git add forgotten\_file
 > 
 > **$** git commit --amend（第二次提交会覆盖第一次提交，Git只记录第二次的提交结果）
+
+### Unstage一个staged文件
+
+例如你更改了两个文件，然后想把他们分成两部分提交，但是你已经使用git add \*命令stage了这两个文件。你怎样unstage其中的一个呢？git status提醒你：
+
+> **$** git add \*
+> 
+> **$** git status
+> 
+> On branch master
+> 
+> Changes to be committed:
+> 
+>  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> 
+> 
+> 
+>  renamed: README.md -&gt; README
+> 
+>  modified: CONTRIBUTING.md
+
+在“Changes to be committed”正下方说使用“git reset HEAD &lt;filename&gt;”unstage文件。那么来使用这个命令。
+
+> **$** git reset HEAD CONTRIBUTING.md
+> 
+> Unstaged changes after reset:
+> 
+> M CONTRIBUTING.md
+> 
+> **$** git status
+> 
+> On branch master
+> 
+> Changes to be committed:
+> 
+>  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> 
+> 
+> 
+>  renamed: README.md -&gt; README
+> 
+> 
+> 
+> Changes not staged for commit:
+> 
+>  \(use "git add &lt;file&gt;..." to update what will be committed\)
+> 
+>  \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> 
+> 
+> 
+>  modified: CONTRIBUTING.md
+
+### unmodified一个modified文件
+
+如果你不想保留在文件中的更改。你怎样简单地取消更改 — 回退到最后提交时的样子。幸运的是git status告诉你应该怎样做。
+
+> Changes not staged for commit:
+> 
+>  \(use "git add &lt;file&gt;..." to update what will be committed\)
+> 
+>  \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> 
+>  modified: CONTRIBUTING.md
+
+
 
 ## 从远程仓库拉取和推送
 
