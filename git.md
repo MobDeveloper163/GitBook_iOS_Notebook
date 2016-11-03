@@ -119,37 +119,55 @@ Changes not staged for commit:（意思是说工作目录中被追踪的文件�
 > 
 > \*.a
 > 
-> 
-> 
 > \# but do track lib.a, even though you're ignoring .a files above（忽略所有的.a文件但是不忽略lib.a文件）
 > 
 > !lib.a
-> 
-> 
 > 
 > \# only ignore the TODO file in the current directory, not subdir\/TODO （只忽略当前文件夹下的TODO文件，不忽略子文件夹下的TODO文件）
 > 
 > \/TODO
 > 
-> 
-> 
 > \# ignore all files in the build\/ directory（忽略build文件夹下所有的文件）
 > 
 > build\/
-> 
-> 
 > 
 > \# ignore doc\/notes.txt, but not doc\/server\/arch.txt（忽略doc文件夹下所有的.txt文件，但是不忽略子文件夹下单下的.txt文件）
 > 
 > doc\/\*.txt
 > 
-> 
-> 
 > \# ignore all .pdf files in the doc\/ directory（忽略doc文件夹及其子文件夹下所有的pdf文件）
 > 
 > doc\/\*\*\/\*.pdf
 
+### 查看staged和unstaged文件
+
+使用git diff不添加任何参数，查看已经更改，但是还没有staged的文件。这个命令比较你的工作空间和staging区域里的文件。
+
+如果你想看已经staged的，即将在下次提交的信息，你可以用git diff --staged。这个命令比较已经staged和上次提交的变化。
+
+**需要注意的是 **git diff自身并不显示从上次提交到现在所有的更改—只显示unstaged文件的不同。可能会比较迷惑，因为如果你stage了所有的更改，git diff不会给出任何的输出信息。
+
+git diff -cached 到目前为止所有staged的文件
+
+### 提交变化
+
+现在你的staging area已经配置成了你希望的方式，你可以提交你的更改了。记住所有未staged的文件—任意你创建、更改但是还没有执行git add命令—并不会在此次提交中。
+
+```
+$ git commit -m "Story 182: Fix benchmarks for speed"
+```
+
+提交命令添加-a选项，git在提交前会自动stage每一个已经tracked的文件，你就可以省掉git add这个步骤。
+
+```
+$ git commit -a -m 'added new benchmarks'
+```
+
 ## 简单快速的消除错误
+
+### 移除文件
+
+从Git移除一个文件，你必须从tracked文件中移除（更准确的是从你的staging区域移除），然后再提交。git rm命令做这个事情，并从你的工作目录移除这个文件，因此在下一次提交时，你不会看到一个它作为untracked file出现。
 
 ## 浏览工程历史记录
 
