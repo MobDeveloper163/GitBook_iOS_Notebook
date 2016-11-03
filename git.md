@@ -293,13 +293,11 @@ $ git add README
 > 
 > Changes to be committed:
 > 
->  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> \(use "git reset HEAD &lt;file&gt;..." to unstage\)
 > 
+> renamed: README.md -&gt; README
 > 
-> 
->  renamed: README.md -&gt; README
-> 
->  modified: CONTRIBUTING.md
+> modified: CONTRIBUTING.md
 
 在“Changes to be committed”正下方说使用“git reset HEAD &lt;filename&gt;”unstage文件。那么来使用这个命令。
 
@@ -315,23 +313,17 @@ $ git add README
 > 
 > Changes to be committed:
 > 
->  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+> \(use "git reset HEAD &lt;file&gt;..." to unstage\)
 > 
-> 
-> 
->  renamed: README.md -&gt; README
-> 
-> 
+> renamed: README.md -&gt; README
 > 
 > Changes not staged for commit:
 > 
->  \(use "git add &lt;file&gt;..." to update what will be committed\)
+> \(use "git add &lt;file&gt;..." to update what will be committed\)
 > 
->  \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
 > 
-> 
-> 
->  modified: CONTRIBUTING.md
+> modified: CONTRIBUTING.md
 
 ### unmodified一个modified文件
 
@@ -339,13 +331,31 @@ $ git add README
 
 > Changes not staged for commit:
 > 
->  \(use "git add &lt;file&gt;..." to update what will be committed\)
+> \(use "git add &lt;file&gt;..." to update what will be committed\)
 > 
->  \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
 > 
->  modified: CONTRIBUTING.md
+> 
+> 
+> modified: CONTRIBUTING.md
+
+它非常明确的告诉你怎样忽略你做出的更改，按照它说的做
+
+> **$** git checkout -- CONTRIBUTING.md
+> 
+> **$** git status
+> 
+> On branch master
+> 
+> Changes to be committed:
+> 
+>  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
 
 
+
+
+
+ renamed: README.md -&gt; README
 
 ## 从远程仓库拉取和推送
 
