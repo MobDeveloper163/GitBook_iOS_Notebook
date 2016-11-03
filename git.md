@@ -181,21 +181,55 @@ $ git commit -a -m 'added new benchmarks'
 > 
 > Changes not staged for commit:
 > 
->  \(use "git add\/rm &lt;file&gt;..." to update what will be committed\)
+> \(use "git add\/rm &lt;file&gt;..." to update what will be committed\)
 > 
->  \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+> 
+> deleted: PROJECTS.md
+> 
+> no changes added to commit \(use "git add" and\/or "git commit -a"\)
+
+此时，如果你执行git rm,git会stage这个文件为removal，移除状态。
+
+> **$** git rm PROJECTS.md
+> 
+> rm 'PROJECTS.md'
+> 
+> **$** git status
+> 
+> On branch master
+> 
+> Your branch is up-to-date with 'origin\/master'.
+> 
+> Changes to be committed:
+> 
+>  \(use "git reset HEAD &lt;file&gt;..." to unstage\)
 > 
 > 
 > 
 > 
 > 
 >  deleted: PROJECTS.md
-> 
-> 
-> 
-> 
-> 
-> no changes added to commit \(use "git add" and\/or "git commit -a"\)
+
+在下一次提交的时候，这个文件就没了，也不会再被tracked.假如你已经更改了文件并且添加到了索引中，你必须使用-f选项强制移除。这是一种安全特性，防止数据还没有在快照中记录就被意外删除，删除后不能从Git恢复。
+
+另一件有用的事情是你想把文件在工作目录中保留，但是从staging区域移除。也就是说你想在硬盘中存储文件，但是不希望git继续追踪。当你忘记将某些文件添加到.gitignore文件时或者意外的stage，特别有用。使用git --cached选项
+
+```
+$ git rm --cached README
+```
+
+您可以将文件，目录和文件glob模式传递给git rm命令。 这意味着你可以做的事情，如：
+
+```
+$ git rm log/\*.log（移除log文件夹下所有的.log文件）
+```
+
+```
+$ git rm \*~（移除所有文件名以~结尾的文件）
+```
+
+
 
 ## 浏览工程历史记录
 
