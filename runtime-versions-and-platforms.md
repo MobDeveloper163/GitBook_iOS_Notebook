@@ -1,6 +1,12 @@
-## Legacy Version\(Objective-C 2.0\)
+# Legacy & Modern Version Runtime
 
-## Modern Version\(Objective-C 1.0\)
+## 在不同的平台上有不同版本的runtime
+
+iPhone应用程序，OS X V10.5及以后版本上的64位程序使用modern version.
+
+OS X上的32位程序使用lagacy version.
+
+## The Diffence between Modern and Legacy Version
 
 最值得关注的特性是实例变量在moder runtime中“ non-fragile ”
 
@@ -8,9 +14,4 @@
 * 在modern runtime中，如果你修改了类中的实例变量的layout，你不需要重新编译集成这个类的的所有的。
 
 另外，modern runtime支持声明属性的实例变量合成。
-
-
-
-
-
 
