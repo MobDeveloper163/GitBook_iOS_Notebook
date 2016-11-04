@@ -7,6 +7,7 @@
         * [Runtime版本和平台](runtime-versions-and-platforms.md)
         * [与Runtime交互](与runtime交互.md)
         * [消息](消息.md)
+        * 使用隐藏的函数
 * [Swift](swift.md)
 * [algorithm](10-algorithm.md)
 * Design Pattern
