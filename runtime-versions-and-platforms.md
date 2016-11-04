@@ -6,7 +6,7 @@ iPhone应用程序，OS X V10.5及以后版本上的64位程序使用modern vers
 
 OS X上的32位程序使用lagacy version.
 
-## The Diffence between Modern and Legacy Version
+## Modern 和 Legacy版本的区别
 
 最值得关注的特性是实例变量在moder runtime中“ non-fragile ”
 
