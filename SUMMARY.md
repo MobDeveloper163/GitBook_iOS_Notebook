@@ -42,6 +42,12 @@
 * [Third-Party Library](third-party-library.md)
     * [解压缩](解压缩.md)
     * [网络](networking-library.md)
+    * [动画](动画.md)
+    * [数据库](数据库.md)
+    * [Block](block.md)
+    * [数据解析](数据解析.md)
+    * [图片处理](图片处理.md)
+    * [UI组件](ui组建.md)
 * Test
 * HTML5
 * Javascript
@@ -49,8 +55,11 @@
 * Interview
 * [个人学习工作心得](19-个人学习工作心得.md)
     * [优雅的使用计算机](优雅的使用计算机.md)
-* 优秀博客收集
+* [优秀博客收集](优秀博客收集.md)
     * [网络](网络.md)
+    * 程序员的思考
+        * [程序员的出路](程序员的出路.md)
+    * [开源库](开源库.md)
 * [Developer Tools](developer-tools.md)
     * [Xcode](xocdel.md)
     * Document
