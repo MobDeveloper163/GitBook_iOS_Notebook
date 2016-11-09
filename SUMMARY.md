@@ -9,6 +9,7 @@
         * [消息](消息.md)
         * [动态方法解析](动态方法解析.md)
         * [消息转发](消息转发.md)
+    * [Category](category.md)
 * [Swift](swift.md)
 * [algorithm](10-algorithm.md)
 * Design Pattern
