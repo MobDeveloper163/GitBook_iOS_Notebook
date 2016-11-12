@@ -96,22 +96,22 @@
     * [优雅的使用计算机](个人心得/优雅的使用计算机.md)
 
 ## 优秀博客收集
-* [优秀博客收集](优秀博客收集.md)
-    * [网络](网络.md)
+* [优秀博客收集](优秀博客收集/优秀博客收集.md)
+    * [网络](优秀博客收集/网络.md)
     * 程序员的思考
-        * [程序员的出路](程序员的出路.md)
-    * [开源库](开源库.md)
+        * [程序员的出路](优秀博客收集/程序员的出路.md)
+    * [开源库](优秀博客收集/开源库.md)
 
 ## Developer Tools
-* [Developer Tools](developer-tools.md)
-    * [Xcode](xocdel.md)
+* [Developer Tools](Developer Tools/developer-tools.md)
+    * [Xcode](Developer Tools/xocdel.md)
     * Document
 
 ## 工具收集
-* [工具收集](工具收集.md)
-    * [pch](pch.md)
+* [工具收集](工具收集/工具收集.md)
+    * [pch](工具收集/pch.md)
 
 ## 版本控制工具
-* [Version Control System](version-control-system.md)
-    * [Git](git.md)
+* [Version Control System](版本控制工具/version-control-system.md)
+    * [Git](版本控制工具/git.md)
 
