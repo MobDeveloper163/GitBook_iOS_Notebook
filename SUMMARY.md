@@ -22,7 +22,7 @@
 * [Swift](swift.md)
 
 ## [algorithm](10-algorithm.md)
-	* [algorithm](10-algorithm.md)
+   * [algorithm](10-algorithm.md)
 * Design Pattern
 * [User Interface](03-user-interface.md)
     * [01-Basic Views](sa.md)
