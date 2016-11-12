@@ -76,8 +76,8 @@
     * [依赖管理](Third Party Library/包管理器.md)
     * [响应式编程](Third Party Library/响应式编程.md)
 
-## Test
-* Test
+## Software Testing
+* Software Testing
 
 ## HTML5
 * HTML5
@@ -91,9 +91,9 @@
 ## Interview
 * Interview
 
-## 个人学习工作心得
-* [个人学习工作心得](19-个人学习工作心得.md)
-    * [优雅的使用计算机](优雅的使用计算机.md)
+## 个人心得
+* [个人心得](个人心得/学习心得.md)
+    * [优雅的使用计算机](个人心得/优雅的使用计算机.md)
 
 ## 优秀博客收集
 * [优秀博客收集](优秀博客收集.md)
