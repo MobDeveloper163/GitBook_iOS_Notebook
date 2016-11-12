@@ -10,15 +10,19 @@
    * [Objective-C](02-objective-c.md)
 
 ## Runtime
-   * [Runtime](runtime.md)
+  * [Runtime](runtime.md)
   * [Runtime版本和平台](runtime-versions-and-platforms.md)
   * [与Runtime交互](与runtime交互.md)
   * [消息](消息.md)
   * [动态方法解析](动态方法解析.md)
   * [消息转发](消息转发.md)
   * [Category](category.md)
+
+## Swift
 * [Swift](swift.md)
-* [algorithm](10-algorithm.md)
+
+## [algorithm](10-algorithm.md)
+	* [algorithm](10-algorithm.md)
 * Design Pattern
 * [User Interface](03-user-interface.md)
     * [01-Basic Views](sa.md)
