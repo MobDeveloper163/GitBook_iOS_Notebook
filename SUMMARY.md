@@ -1,43 +1,42 @@
+# Summary
 
 ## 简介
-   * [作者简介](README.md)
-   * [前言](README.md)
-   * [序言](README.md)
-
+* [作者简介](README.md)
+* [前言](README.md)
+* [序言](README.md)
 
 ## C语言
-   * [C语言](chapter1.md)
+* [C语言](chapter1.md)
 
 ## Objective-C
-   * [Objective-C](02-objective-c.md)
-   * Runtime
-     * [Runtime](runtime.md)
-     * [Runtime版本和平台](runtime-versions-and-platforms.md)
-     * [与Runtime交互](与runtime交互.md)
-     * [消息](消息.md)
-     * [动态方法解析](动态方法解析.md)
-     * [消息转发](消息转发.md)
-     * [Category](category.md)
+* [Runtime](runtime.md)
+    * [Runtime](runtime.md)
+    * [Runtime版本和平台](runtime-versions-and-platforms.md)
+    * [与Runtime交互](与runtime交互.md)
+    * [消息](消息.md)
+    * [动态方法解析](动态方法解析.md)
+    * [消息转发](消息转发.md)
+    * [Category](category.md)
 
 ## Swift
-  * [Swift](swift.md)
+* [Swift](swift.md)
 
-## [algorithm](10-algorithm.md)
-   * [algorithm](10-algorithm.md)
+## algorithm
+* [algorithm](10-algorithm.md)
 
 ## Design Pattern
-   * Design Pattern(10-algorithm.md)
+* Design Pattern\(10-algorithm.md\)
 
 ## User Interface
-   * [User Interface](03-user-interface.md)
-     * [01-Basic Views](03-user-interface.md)
-     * 02-AutoLayout(03-user-interface.md)
+* [User Interface](03-user-interface.md)
+    * [01-Basic Views](03-user-interface.md)
+    * 02-AutoLayout\(03-user-interface.md\)
 
 ## Animation
-   * [Animation](05-animation.md)
+* [Animation](05-animation.md)
 
 ## Storage
-   * [Storage](05-animation.md)
+* [Storage](05-animation.md)
 
 ## Thread
 * [Thread](09-thread.md)
@@ -96,11 +95,11 @@
 ## Interview
 * Interview
 
-## [个人学习工作心得](19-个人学习工作心得.md)
+## 个人学习工作心得
 * [个人学习工作心得](19-个人学习工作心得.md)
     * [优雅的使用计算机](优雅的使用计算机.md)
 
-## [优秀博客收集](优秀博客收集.md)
+## 优秀博客收集
 * [优秀博客收集](优秀博客收集.md)
     * [网络](网络.md)
     * 程序员的思考
