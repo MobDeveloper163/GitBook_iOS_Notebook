@@ -104,7 +104,7 @@
 
 ## Developer Tools
 * [Developer Tools](Developer Tools/developer-tools.md)
-    * [Xcode](Developer Tools/xocdel.md)
+    * [Xcode](Developer Tools/xode.md)
     * Document
 
 ## 工具收集
