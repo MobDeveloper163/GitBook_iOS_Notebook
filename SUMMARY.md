@@ -4,9 +4,13 @@
    * [前言](README.md)
 
 ## C语言
-   [C语言](chapter1.md)
-## [Objective-C](02-objective-c.md)
-## [Runtime](runtime.md)
+   * [C语言](chapter1.md)
+
+## Objective-C
+   * [Objective-C](02-objective-c.md)
+
+## Runtime
+   * [Runtime](runtime.md)
   * [Runtime版本和平台](runtime-versions-and-platforms.md)
   * [与Runtime交互](与runtime交互.md)
   * [消息](消息.md)
