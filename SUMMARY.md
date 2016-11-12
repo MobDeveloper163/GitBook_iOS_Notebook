@@ -39,8 +39,8 @@
 
 ## Thread
 * [01-NSThread](Thread/NSThread.md)
-* 02-NSOperation
-* 03-GCD
+* [02-NSOperation](Thread/NSOperation.md)
+* [03-GCD](Thread/03-GCD)
 
 ## Networking
 * [Networking](10-networking.md)
