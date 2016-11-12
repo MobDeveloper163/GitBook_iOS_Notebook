@@ -21,7 +21,7 @@
 * [Swift单词](Swift/swift.md)
 
 ## algorithm
-* [algorithm](10-algorithm.md)
+* [algorithm](Algorithm/10-algorithm.md)
 
 ## Design Pattern
 * [设计模式](Design Pattern/Test/10-algorithm.md)
