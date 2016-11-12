@@ -18,7 +18,7 @@
     * [Category](category.md)
 
 ## Swift
-* [Swift单词](swift.md)
+* [Swift单词](Swift/swift.md)
 
 ## algorithm
 * [algorithm](10-algorithm.md)
