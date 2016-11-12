@@ -24,7 +24,7 @@
 * [algorithm](10-algorithm.md)
 
 ## Design Pattern
-* Design Pattern(Design Pattern/Test/10-algorithm.md)
+* Design Pattern(设计模式/Test/10-algorithm.md)
 
 ## User Interface
 * [User Interface](03-user-interface.md)
