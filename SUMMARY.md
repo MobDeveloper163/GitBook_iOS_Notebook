@@ -23,16 +23,28 @@
 
 ## [algorithm](10-algorithm.md)
    * [algorithm](10-algorithm.md)
-* Design Pattern
-* [User Interface](03-user-interface.md)
-    * [01-Basic Views](sa.md)
-    * 02-AutoLayout
-* [Animation](05-animation.md)
-* Storage
+
+## Design Pattern
+   * Design Pattern(10-algorithm.md)
+
+## User Interface
+   * [User Interface](03-user-interface.md)
+     * [01-Basic Views](03-user-interface.md)
+     * 02-AutoLayout(03-user-interface.md)
+
+## Animation
+   * [Animation](05-animation.md)
+
+## Storage
+   * [Storage](05-animation.md)
+
+## Thread
 * [Thread](09-thread.md)
     * [01-NSThread](nsthread.md)
     * 02-NSOperation
     * 03-GCD
+
+## Networking
 * [Networking](10-networking.md)
     * [网络基础概念](网络基础概念.md)
         * 网络模型
