@@ -43,14 +43,13 @@
 * [03-GCD](Thread/03-GCD)
 
 ## Networking
-* [Networking](10-networking.md)
-    * [网络基础概念](网络基础概念.md)
+   * [网络基础概念](网络基础概念.md)
         * 网络模型
         * [Socket](socket.md)
-    * 数据解析
+   * 数据解析
         * [XML数据解析](xml数据解析.md)
         * [JSON数据解析](json数据解析.md)
-    * [HTTP请求](getpost请求.md)
+    * [HTTP请求](Networking/GET、POST请求.md)
     * NSURLConnection
     * [NSURLSession](nsurlsession.md)
     * [注意事项](注意事项.md)
