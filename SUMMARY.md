@@ -1,9 +1,9 @@
 # Summary
 
-# [简介](README.md)
-# [C语言](chapter1.md)
+## [简介](README.md)
+## [C语言](chapter1.md)
 ## [Objective-C](02-objective-c.md)
-  ## [Runtime](runtime.md)
+## [Runtime](runtime.md)
   * [Runtime版本和平台](runtime-versions-and-platforms.md)
   * [与Runtime交互](与runtime交互.md)
   * [消息](消息.md)
