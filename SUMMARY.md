@@ -10,12 +10,12 @@
 
 ## Objective-C
 * [Runtime](runtime.md)
-    * [Runtime版本和平台](Objective-C/Runtime/01-runtime-versions-and-platforms.md)
-    * [与Runtime交互](与runtime交互.md)
-    * [消息](消息.md)
-    * [动态方法解析](动态方法解析.md)
-    * [消息转发](消息转发.md)
-    * [Category](category.md)
+    * [Runtime版本和平台](ObjectiveC/Runtime/01-runtime-versions-and-platforms.md)
+    * [与Runtime交互](Objective-C/Runtime/02-与runtime交互.md)
+    * [消息](Objective-C/Runtime/03-消息.md)
+    * [动态方法解析](Objective-C/Runtime/04-动态方法解析.md)
+    * [消息转发](Objective-C/Runtime/05-消息转发.md)
+    * [Category](Objective-C/Runtime/06-category.md)
 
 ## Swift
 * [Swift单词](Swift/swift.md)
