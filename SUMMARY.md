@@ -38,10 +38,9 @@
 * [Core Data](Storage/Core Data.md)
 
 ## Thread
-* [Thread](09-thread.md)
-    * [01-NSThread](nsthread.md)
-    * 02-NSOperation
-    * 03-GCD
+* [01-NSThread](Thread/NSThread.md)
+* 02-NSOperation
+* 03-GCD
 
 ## Networking
 * [Networking](10-networking.md)
