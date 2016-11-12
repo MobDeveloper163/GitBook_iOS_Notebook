@@ -10,7 +10,7 @@
 
 ## Objective-C
 * [Runtime](runtime.md)
-    * [Runtime版本和平台](runtime-versions-and-platforms.md)
+    * [Runtime版本和平台](Objective-C/Runtime/01-runtime-versions-and-platforms.md)
     * [与Runtime交互](与runtime交互.md)
     * [消息](消息.md)
     * [动态方法解析](动态方法解析.md)
