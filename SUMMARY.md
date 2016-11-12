@@ -35,7 +35,7 @@
 * [Animation](Animation/05-animation.md)
 
 ## Storage
-* [Storage](05-animation.md)
+* [Storage](Storage/Core Data.md)
 
 ## Thread
 * [Thread](09-thread.md)
