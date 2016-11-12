@@ -24,12 +24,12 @@
 * [algorithm](Algorithm/10-algorithm.md)
 
 ## Design Pattern
-* [设计模式](Design Pattern/Test/10-algorithm.md)
+* [设计模式](Design Pattern/10-algorithm.md)
 
 ## User Interface
-* [User Interface](03-user-interface.md)
-    * [01-Basic Views](03-user-interface.md)
-    * 02-AutoLayout\(03-user-interface.md\)
+* [User Interface](User Interface/03-user-interface.md)
+    * [01-Basic Views](User Interface/03-user-interface.md)
+    * 02-AutoLayout\(User Interface/03-user-interface.md)
 
 ## Animation
 * [Animation](05-animation.md)
