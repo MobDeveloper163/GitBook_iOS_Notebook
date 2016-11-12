@@ -19,7 +19,7 @@
   * [Category](category.md)
 
 ## Swift
-* [Swift](swift.md)
+  * [Swift](swift.md)
 
 ## [algorithm](10-algorithm.md)
    * [algorithm](10-algorithm.md)
