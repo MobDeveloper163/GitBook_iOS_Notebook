@@ -1,6 +1,6 @@
 # Git的基本使用
 
-## 创建Git仓库 
+## 创建Git仓库
 
 ### 创建Git仓库有两种途径
 
@@ -46,6 +46,7 @@ git add README.txt
 ## 组织和提交文件更新
 
 如果修改了之前已经追踪的文件，也就是一个状态是tracked的文件时，比如CONTRIBUTING.md为tracked的状态，修改之后再使用git status命令,此时的内容如下：
+
 
 > $ git status
 > 
