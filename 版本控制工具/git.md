@@ -47,7 +47,6 @@ git add README.txt
 
 如果修改了之前已经追踪的文件，也就是一个状态是tracked的文件时，比如CONTRIBUTING.md为tracked的状态，修改之后再使用git status命令,此时的内容如下：
 
-
 > $ git status
 > 
 > On branch master
@@ -219,7 +218,7 @@ $ git rm --cached README
 您可以将文件，目录和文件glob模式传递给git rm命令。 这意味着你可以做的事情，如：
 
 ```
-$ git rm log/\*.log（移除log文件夹下所有的.log文件）
+$ git rm log/*.log（移除log文件夹下所有的.log文件）
 ```
 
 ```
