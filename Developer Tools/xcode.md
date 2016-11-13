@@ -1,9 +1,9 @@
-# Developer Documentation 
+### Developer Documentation 
 
-Xcode downloaded documentation is installed in 
+Xcode下载的文档安装在
 
 ```
-~/Library/Developer/Shared/Documentation/DocSets.
+~/Library/Developer/Shared/Documentation/DocSets
 
 ```
 
