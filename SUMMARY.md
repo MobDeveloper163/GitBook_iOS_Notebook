@@ -110,6 +110,7 @@
 ## 工具收集
 * [工具收集](工具收集/工具收集.md)
     * [pch](工具收集/pch.md)
+    * [iOS gitignore file](工具收集/iOS Git Ignore File.md)
 
 ## 版本控制工具
 * [Version Control System](版本控制工具/version-control-system.md)
