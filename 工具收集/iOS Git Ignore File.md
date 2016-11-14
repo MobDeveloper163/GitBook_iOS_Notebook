@@ -1,0 +1,27 @@
+### iOS .gitignore文件内容
+```
+# Mac OS X
+*.DS_Store
+
+# Xcode
+
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Generated files
+*.o
+*.pyc
+
+# Backup files
+
+*~.nib
+\#*#
+.#*
+
+
+```
