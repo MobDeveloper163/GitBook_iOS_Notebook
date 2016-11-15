@@ -4,11 +4,15 @@
 
 2. 在电脑上创建自己的CocoaPods的文件夹，我在桌面创建了'MobDevLib'文件夹。
 
-3. 从官网的CocoaPods下载pod模板。打开终端，cd到刚才创建的MobDevLib文件夹，输入\：
+3. 从官网的CocoaPods下载pod模板。打开终端，cd到刚才创建的MobDevLib文件夹，输入：
 
-```
-pod lib create MyCocoaPods
+  ```
+  pod lib create MyCocoaPods
+ pod lib create MyCocoaPods
 
-```
+ pod lib create MyCocoaPods
+
+
+  ```
 
 
