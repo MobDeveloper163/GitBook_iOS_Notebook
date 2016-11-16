@@ -2,7 +2,7 @@
 
 #### 本地创建自己的Pod
 
-1. 在GitHub上为自己的CocoaPods创建一个新的仓库：[https://github.com/MobDeveloper163/MyCocoaPods.git](https://github.com/MobDeveloper163/MyCocoaPods.git)
+1. 在GitHub上为自己的Pod创建一个新的仓库：[https://github.com/MobDeveloper163/MyCocoaPods.git](https://github.com/MobDeveloper163/MyCocoaPods.git)
 	 
 
 2. 打开终端cd到桌面，执行`pod lib create MyCocoaPods`命令，终端会提示
