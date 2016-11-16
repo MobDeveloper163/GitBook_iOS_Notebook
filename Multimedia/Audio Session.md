@@ -57,6 +57,41 @@ if (!success) { /* handle the error in activationError */ }
 
 ```
 
+Apple建议注册通知消息，显式的激活和取消激活Audio Session。
+
+大多数应用并不需要显式的取消激活Audio Session。重要的例外有VoIP（网络协议声音）应用，turn-by-turn导航应用，以及某些情况下的录制应用。
+
+* 确保通常运行在后台的VoIP应用，只在通话的时候激活。当等待呼叫的时候，不应该激活。
+* 确保使用录制类型的应用只在录制的时候激活Audio Session。在录制前后录制结束后，保证session未激活，允许播放其他的声音，比如收到信息的通知。
+
+### 检测应用启动时，其他音频正在播放
+
+### Working with Inter-App Audio
+
+> In its most basic form, inter-app audio allows one app, called the node app, to send its audio output to another app, called the host app. However, it is also possible for the host app to send its output to the node app, have the node app process the audio, and send the result back to the host app. The host app needs to have an active audio session; however, the node app only needs an active audio session if it is receiving input from the host app or the system. Use the following guidelines when setting up inter-app audio:
+
+>Set the “inter-app-audio” entitlement for both the host and node app.
+
+>Set the UIBackgroundModes audio flag for the host app.
+Set the UIBackgroundModes audio flag for node apps that use audio input or output routes while simultaneously connected to an inter-app audio host.
+
+>Set the AVAudioSessionCategoryOptionMixWithOthers for both the host and node app.
+
+>Make sure the node app’s audio session is active if it receives audio input from the system (or sends audio output) while simultaneously connected to an inter-app host.
+
+
+
+
+### Working with Categories
+
+##### 录制权限：
+在iOS中开始，应用在录制音频前，必须请求和接收用户的许可。如果用户没有给你录制的权限，就录不到声音。当你使用用的Category支持录制以及应用尝试使用input route时，系统自动地通知用户请求权限。你也可以使用requestRecordingPermission:方法向用户请求许可，替代等待系统请求。体验更好。
+
+
+
+
+
+
 
 
 
