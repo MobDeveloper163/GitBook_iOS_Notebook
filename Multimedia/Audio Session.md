@@ -8,4 +8,5 @@
 
 只有在以下情况，你才可以安全地忽略Audio Session:
 * 当你在使用`System Sound Service` 或者 UIKit 的 `playInputClick`方法而不使用其他Audio API处理音频的时候，
+
 * 你的应用不适用音频
