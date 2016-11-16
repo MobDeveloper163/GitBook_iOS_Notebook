@@ -1,13 +1,10 @@
 # Summary
 
-## 简介
-
 * [作者简介](README.md)
 * [前言](README.md)
 * [序言](README.md)
 
-## C语言
-
+---
 * [C语言](chapter1.md)
 
 ## Objective-C
@@ -57,10 +54,12 @@
 ## Networking
 
 * [网络基础概念](Networking/网络基础概念.md)
+
   * 网络模型
   * [Socket](Networking/socket.md)
 
 * [XML数据解析](Networking/xml数据解析.md)
+
 * [JSON数据解析](Networking/json数据解析.md)
 * [HTTP请求](Networking/GET、POST请求.md)
 * NSURLConnection
@@ -123,11 +122,14 @@
 ## 优秀博客收集
 
 * [优秀博客收集](优秀博客收集/优秀博客收集.md)
+
   * [网络](优秀博客收集/网络.md)
   * 程序员的思考
+
     * [程序员的出路](优秀博客收集/程序员的出路.md)
 
   * [开源库](优秀博客收集/开源库.md)
+
 
 
 ## Developer Tools
@@ -155,3 +157,4 @@
 
 * [CocoaPods安装](我的文章/iOS/CocoaPods安装.md)
 * [创建自己的CocoaPods](我的文章/iOS/创建自己的CocoaPods.md)
+
