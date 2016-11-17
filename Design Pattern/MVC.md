@@ -1,0 +1,9 @@
+什么是MVC？
+
+MVC是怎样工作的？
+
+MVC的优点是什么？
+
+MVC Group一起工作
+
+MVC就是把所有的对象分成Model、View和Controller三个角色，各自负责不同的任务。三者之间的通信有有着明确的规定。Controller能和Model和View通信，View能向Controller发送消息，告诉Controller自己被点击，或者被更改，或者向Controller请求是否可以变化,在这里通常是通过代理的方式完成。但是Model不能直接向Controller发送消息，需要通过通知或者KVO的当时完成与Controller的通信。
