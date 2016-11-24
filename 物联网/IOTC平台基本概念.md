@@ -131,5 +131,10 @@ IOTC平台提供了三中数据通讯模型
 
 因为三种传输数据的方式的目的不同，他们的好处和开销也各不相同。因此建议调研在client和device中开发什么类型的功能，然后从三种传输模型中选择最合适的一种。
 
+#### IOTC P2P Tunnel Module
+
+Tunnel连接通过公共网络上提供了一个私有的传输路径。下面描述了IOTC P2PTunnel模型支持的协议和示意图表：
+![IOTC P2P Tunnel Model](/assets/03-IOTC P2P Tunnel Model.png)
 
 
+#### 穿透能力
