@@ -72,4 +72,16 @@ IOTC全称为Internet of Things Cloud，翻译为物联网云
 
 下图描绘了master, server, device和client 在IOTC平台中的协作关系：![IOTC各参与者协作关系图](/assets/01-IOTC协作关系图.png)
 
+在上图中定义了六条路径，并且它们在对等体之间的协作行为描述如下。注意以下是典型、通用的协同工作行为。 为了便于说明，暂时省略了错误处理或来回通信的细节。
+
+* Path 1 * 当一个Server启动，通过提供自身的UID链接到所选的masters * Masters验证server的UID是否有效。如果server能够被masters识别，服务器信息，比如IP地址和VPG，将会存储在masters里面 * Path 2 * 当一个device想加入IOTC平台，需要凭借其UID链接到所选的master * Master会检测device的UID是否有效，如果有效，master会向device反馈一个可连接的并且已将PVG和device匹配的server列表
+
+* Path 3 * 一旦device从master获取到了可连接的servers的列表，它会通过UID登录到这些servers * severs验证device的UID是否有效，server将保存device的信息，并回应设备登录程序完成 * 一旦device成功登录servers,device开始监听来自client的所有的连接 * Path 4 * 当Client想使用IOTC平台的服务，它会连接到所选的服务器并凭借UID询问管理device的servers列表 * master返回servers列表到client * Path 5 * 一旦client从master获取到servers的列表，它会要求哪些服务器和指定的device建立连接 * servers基于网络状态，在device和client之间创建P2P或者中继服务
+
+* Path 6  * device和client之间的连接已经准备完毕，可以相互传输数据了 * 三种通讯模型可以用于三种不同的目的：IOTC Model、RDT Mode、AV Model #### 数据传输模型
+
+IOTC平台提供了三中数据通讯模型 * IOTC Model * RDT Mode * AV Model 通过设计，RDT模块和AV模块利用来自IOTC模块的服务，同时提供更具体的数据传输方式。 他们的关系可以用下图描述：
+![IOTC提供的三种数据传输模型](/assets/02-IOTC平台提供的三中数据传输模型.png)
+
+
 
