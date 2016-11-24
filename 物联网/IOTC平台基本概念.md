@@ -7,20 +7,24 @@ IOTC全称为Internet of Things Cloud，翻译为物联网云
 基本概念包含五个部分：
 
 1. IOTC平台使用的技术说明；
-2. IOTC平台的4个关键原则以及它们的职责；
+
+2. IOTC平台的4个关键参与者以及它们的职责；
+
 3. 详细描述各部分协作，提供IOTC平台的概述；
+
 4. 简要描述了IOTC平台中的三个重要的数据通信模块极其关系
+
 5. IOTC平台的渗透能力
 
-
 #### 专业术语
+
 * IOTC Platform — 物联网云平台，TUTK提供的在不同设备客户端之间通过简单的配置建立P2P连接，传输不同类型数据的解决方案。
 
 * Master — 由TUTK在IOTC平台中维护的机器，用于管理服务器和设备，以及通过检查内部密钥信息来验证它们
 
 * Server - 由TUTK或设备制造商在IOTC平台中维护的机器，用于通过P2P或中继服务来处理设备和客户端之间的连接
 
-* Devices -  由供应商制造的设备，be capable of IOTC platform 并且即使放在NAT之后，也能与客户端（Client）建立连接
+* Devices - 由供应商制造的设备，be capable of IOTC platform 并且即使放在NAT之后，也能与客户端（Client）建立连接
 
 * Client - 连接Devices的终端，在设备间传输数据
 
@@ -38,7 +42,7 @@ IOTC全称为Internet of Things Cloud，翻译为物联网云
 
 * RDT Server - 使用RDT和RDT Client传输和接收数据的Device
 
-* RDT Client - 使用RDT和RDT Server传输和接收数据的Client 
+* RDT Client - 使用RDT和RDT Server传输和接收数据的Client
 
 * RDT Channel - 基于IOTC Channel，在RDT Client和RDT Server之间建立的Channel,一个RDT Server可以有一个RDT Client和多个RDT Channels
 
@@ -58,6 +62,14 @@ IOTC全称为Internet of Things Cloud，翻译为物联网云
 
 * AES - IOTC平台支持的一种工业加密方式，保护devices和clients之间的数据传输
 
+#### 角色和职责
 
+在IOTC平台中，master、server、device和client四个主要参与者相互协作完成P2P或者通过在device和client上通过简单的配置完成中继服务。以下是它们在IOTC平台中的主要职责：
+
+* Master * 验证Server和Client的UID * 管理连接的server * 向设备和客户端提供与特定VPG匹配的服务器列表
+
+* Server * 管理登录的client * 提供客户端P2P或中继服务与设备通信 * Device * 登录到与特定VPG匹配的服务器 * 监听来自Client的连接 * 和clients通信 * Client * 请求master提供与device特定的VPG匹配的服务器列表 * 向server请求帮助与devices建立连接 * 和devices通信 * Tunnel Server * 通过UID登录severs * 监听来自Tunnel agent的连接请求 * 和Tunnel agent通信 * Tunnel Agent * 凭借UID请求master提供servers的列表 * 请求Servers与Tunnel Server建立P2P连接 * 和Tunnel Server通信 #### 协作
+
+下图描绘了master, server, device和client 在IOTC平台中的协作关系：![IOTC各参与者协作关系图](/assets/01-IOTC协作关系图.png)
 
 
