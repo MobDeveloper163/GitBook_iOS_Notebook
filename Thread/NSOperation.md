@@ -1,0 +1,13 @@
+### NSOperation
+
+NSOperation是抽象类，需要使用它的子类或者系统定义的子类来做实际的任务。虽然是抽象类，但是它NSOperation的基本实现包含重要的逻辑来保证任务安全执行。一个Operation对象只能执行一次不能在此执行。通常它们放在operation queue（NSOperation Queue的实例）中执行。Operation Queue有时直接执行它的operations或者利用GCD在其他线程间接的执行。
+
+如果你不想使用operation queue执行operation，你也可以自行直接调用operation的start方法执行。手动的执行operation确实会增加你的代码的负担，因为启动不在ready状态的operation会触发异常。ready属性报告operation是否准备就绪。
+
+### NSOperation Dependencies
+
+Dependency是一种让operations的按照指定顺序执行的简单方式。你可以是使用addDependency:或者removeDependency:为operation添加或者移除dependencies.默认情况下，有dependencies的operation不被当作ready状态知道它依赖的所有的operation执行完毕。然而，一旦最后的dependency执行完毕，operation变为ready状态并且可执行。
+
+
+
+
