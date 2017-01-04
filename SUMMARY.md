@@ -24,6 +24,7 @@
 ## Swift
 
 * [Swift单词](Swift/swift.md)
+* [Swift基础](Swift/Swift基础.md)
 
 ## algorithm
 
