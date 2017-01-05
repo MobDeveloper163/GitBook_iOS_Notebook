@@ -32,6 +32,8 @@
 
   var x : String = "Hello Swift"
 
+> 
+
 #### 2. Optional\(可选值\)
 
 #### 3. 控制流
