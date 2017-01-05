@@ -1,4 +1,4 @@
-### Swift历史
+``### Swift历史
 
 2014年6月和Xcode6一起发布了Swift1.0版本
 
@@ -24,7 +24,7 @@
 
 >Swift是一种类型意识极强的语言，x为Int类型，y为Double类型，因此不能直接参与运算。
 
-  
+  `let z = Double(x) + y`
 
 
 
