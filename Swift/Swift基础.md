@@ -28,6 +28,10 @@
 
 > 上面使用Double(x)的方式把x转换成Double类型，这样x和y就可以进行同类型运算了
 
+  **显式声明变量类型**
+
+  var x : String = "Hello Swift"
+
 #### 2. Optional\(可选值\)
 
 #### 3. 控制流
