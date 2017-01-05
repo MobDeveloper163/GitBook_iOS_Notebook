@@ -26,7 +26,7 @@
 
   `let z = Double(x) + y`
 
-
+> 上面使用Double(x)的方式把x转换成Double类型，这样x和y就可以进行同类型运算了
 
 #### 2. Optional\(可选值\)
 
