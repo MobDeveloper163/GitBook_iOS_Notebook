@@ -10,4 +10,4 @@
 
 
 ## 内省
-
+Foundation框架中的NSObject类的API提供了非常多用于执行对象内省的方法。
