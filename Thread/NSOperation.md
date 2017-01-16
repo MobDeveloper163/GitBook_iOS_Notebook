@@ -11,4 +11,7 @@ Dependency是一种让operations的按照指定顺序执行的简单方式。你
 ### NSBlockOperation
 
 
+### NSInvocationOperation
+
+
 
