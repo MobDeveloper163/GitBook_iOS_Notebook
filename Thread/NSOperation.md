@@ -1,6 +1,10 @@
 ## 并行操作 - NSOperation
 
-NSOperation是抽象类，需要使用它的子类或者系统定义的子类来做实际的任务。虽然是抽象类，但是它NSOperation的基本实现包含重要的逻辑来保证任务安全执行。一个Operation对象只能执行一次,不能再次执行。通常它们放在operation queue（NSOperation Queue的实例）中执行。Operation Queue有时直接执行它的operations或者利用GCD在其他线程间接的执行。
+NSOperation是抽象类，用于封装单个任务的代码和先关数据。虽然是抽象类，但是它NSOperation的基本实现包含重要的逻辑来保证任务安全执行。需要使用它的子类或者系统定义的子类来做实际的任务。在处理非并行任务时，具体子类通常只用重写main方法。在处理并行任务时，至少必须至少重写start、isConcurrent、isExecuting和isFinished方法。
+
+系统提供了两个NSOperation的具体子类，NSBlockOperation和NSInvocationOperation.
+
+一个Operation对象只能执行一次,不能再次执行。通常它们放在operation queue（NSOperation Queue的实例）中执行。Operation Queue有时直接执行它的operations或者利用GCD在其他线程间接的执行。
 
 如果你不想使用operation queue执行operation，你也可以自行直接调用operation的start方法执行。手动的执行operation确实会增加你的代码的负担，因为启动不在ready状态的operation会触发异常。ready属性报告operation是否准备就绪。
 
