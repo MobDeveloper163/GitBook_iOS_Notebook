@@ -8,6 +8,7 @@ NSOperation是抽象类，需要使用它的子类或者系统定义的子类来
 
 Dependency是一种让operations的按照指定顺序执行的简单方式。你可以是使用addDependency:或者removeDependency:为operation添加或者移除dependencies.默认情况下，有dependencies的operation不被当作ready状态知道它依赖的所有的operation执行完毕。然而，一旦最后的dependency执行完毕，operation变为ready状态并且可执行。
 
+### NSBlockOperation
 
 
 
