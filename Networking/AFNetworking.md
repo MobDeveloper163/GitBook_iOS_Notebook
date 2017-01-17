@@ -17,6 +17,7 @@
 * AFHTTPSessionManager
 
 #### 序列化
+* <AFURLRequestSerialization>
 
 
 
