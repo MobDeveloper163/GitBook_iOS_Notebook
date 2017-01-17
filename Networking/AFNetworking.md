@@ -192,3 +192,6 @@ AFSecurityPolicy通过安全连接评估针对固定的X.509证书和公用密�
 AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 manager.securityPolicy.allowInvalidCertificates = YES; // 生产环境不推荐
 ```
+
+### 单元测试
+AFNetworking包含单元测试套件，放在在Tests子文件目录中。这些测试可以简单地在要测试的平台框架上执行测试操作来运行。
