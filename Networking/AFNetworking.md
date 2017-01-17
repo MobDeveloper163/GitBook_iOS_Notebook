@@ -154,3 +154,13 @@ NSDictionary *parameters = @{@"foo": @"bar", @"baz": @[@1, @2, @3]};
 > Content-Type: application/x-www-form-urlencoded
 
 > foo=bar&baz[]=1&baz[]=2&baz[]=3
+
+#### JSON参数编码
+```
+[[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLString parameters:parameters error:nil];
+```
+> POST http://example.com/
+
+> Content-Type: application/json
+
+> {"foo": "bar", "baz": [1,2,3]}
