@@ -20,6 +20,18 @@
 * <AFURLRequestSerialization>
 	* AFHTTPRequestSerialization
 	* AFJSONSerialization
+	* AFPropertityListSerialization
+	
+* <AFURLResponseSerialization>
+	* AFHTTPResponseSerialization
+	* AFJSONResponseSerialization
+	* AFXMLParserResponseSerialization
+	* AFPropertyListResponseSerialization
+	* AFImageResponseSerialization
+	* AFCompoundResponseSerialization
+	
+
+
 
 
 ### AFURLSessionManager
