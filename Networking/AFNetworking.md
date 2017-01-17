@@ -165,4 +165,5 @@ NSDictionary *parameters = @{@"foo": @"bar", @"baz": @[@1, @2, @3]};
 
 > {"foo": "bar", "baz": [1,2,3]}
 
-#### Network Reachability Manager
+#### Network Reachability Manager(网络访问管理)
+
