@@ -133,8 +133,12 @@ NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completion
 ```
 ### 请求序列化
 
+请求序列化程序从URL字符串创建请求，将参数编码为查询字符串或HTTP正文。
+```
+NSString *URLString = @"http://example.com";
+NSDictionary *parameters = @{@"foo": @"bar", @"baz": @[@1, @2, @3]};
+```
 
-
-
+#### 请求字符串参数编码
 
 
