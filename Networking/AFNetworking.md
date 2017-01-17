@@ -115,6 +115,25 @@ NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithStreamedRequest:requ
 
 ##### 创建一个data task
 
+```
+NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+
+NSURL *URL = [NSURL URLWithString:@"http://httpbin.org/get"];
+NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+
+NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+    if (error) {
+        NSLog(@"Error: %@", error);
+    } else {
+        NSLog(@"%@ %@", response, responseObject);
+    }
+}];
+[dataTask resume];
+```
+### 请求序列化
+
+
 
 
 
