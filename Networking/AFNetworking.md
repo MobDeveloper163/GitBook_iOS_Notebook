@@ -41,10 +41,6 @@ AFURLSessionManager创建并管理一个基于指定NSURLSessionConfiguration对
 
 ##### 创建一个下载任务
 
-AFURLSessionManager遵从<NSURLSessionTaskDelegate>, <NSURLSessionDataDelegate>, <NSURLSessionDownloadDelegate>和 <NSURLSessionDelegate>，基于指定的NSURLSessionConfiguration对象创建和管理NSURLSession.
-
-### 创建一个下载任务
-
 ```
 NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
 AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
