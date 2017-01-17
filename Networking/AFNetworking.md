@@ -18,7 +18,8 @@
 
 #### 序列化
 * <AFURLRequestSerialization>
-
+	* AFHTTPRequestSerialization
+	* AFJSONSerialization
 
 
 ### AFURLSessionManager
