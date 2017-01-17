@@ -32,7 +32,8 @@
 	* AFCompoundResponseSerialization
 	
 #### 附加功能
-
+* AFSecurityPolicy
+* AFNetworkReachabilityManager
 
 ### AFURLSessionManager
 
