@@ -165,6 +165,12 @@ NSDictionary *parameters = @{@"foo": @"bar", @"baz": @[@1, @2, @3]};
 
 > {"foo": "bar", "baz": [1,2,3]}
 
-#### Network Reachability Manager(网络可用性管理)
-
+#### Network Reachability Manager(网络可达性管理)
+AFNetworkReachabilityManagerj监听域名、WWAN和Wifiw网络接口的地址是否可访问。
+* 不要使用Reachability决定原始的请求是否应该发送。
+	* 应该尝试发送请求。
+* 可以使用Reachability决定什么时候应该重新发送请求。
+	* 尽管请求还会失败，连接可用的通知是再次尝试请求的好时机。
+* Reachability是检测请求为什么失败的好工具
+	* 网络请求失败后，在告诉用户已离线比告诉他们一个准确的技术性的错误要好，比如“请求超时”
 
