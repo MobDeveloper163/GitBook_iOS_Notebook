@@ -37,7 +37,9 @@
 
 ### 使用
 #### AFURLSessionManager
-AFURLSessionManager创建并管理一个基于指定NSURLSessionConfiguration对象的NSURLSession对象，遵从<NSURLSessionTaskDelegate>, <NSURLSessionDataDelegate>, <NSURLSessionDownloadDelegate>, and <NSURLSessionDelegate>协议
+AFURLSessionManager创建并管理一个基于指定NSURLSessionConfiguration对象的NSURLSession对象，遵从NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate 和NSURLSessionDelegate协议
+
+##### 创建一个下载任务
 
 AFURLSessionManager遵从<NSURLSessionTaskDelegate>, <NSURLSessionDataDelegate>, <NSURLSessionDownloadDelegate>和 <NSURLSessionDelegate>，基于指定的NSURLSessionConfiguration对象创建和管理NSURLSession.
 
