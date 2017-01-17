@@ -140,5 +140,17 @@ NSDictionary *parameters = @{@"foo": @"bar", @"baz": @[@1, @2, @3]};
 ```
 
 #### 请求字符串参数编码
+```
+[[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:URLString parameters:parameters error:nil];
+```
+> GET http://example.com?foo=bar&baz[]=1&baz[]=2&baz[]=3
 
+#### URL表单参数编码
+```
+[[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLString parameters:parameters error:nil];
+```
+> POST http://example.com/
 
+> Content-Type: application/x-www-form-urlencoded
+
+> foo=bar&baz[]=1&baz[]=2&baz[]=3
