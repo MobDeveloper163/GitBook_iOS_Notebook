@@ -7,6 +7,8 @@
 
 > pod 'AFNetworking', '~> 3.0'
 
+然后，在终端运行
+> $ pod install
 
 ### AFURLSessionManager
 
