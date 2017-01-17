@@ -1,4 +1,12 @@
 ## AFNetworking
+### 安装
+使用CocoaPods安装，在Podfile中配置如下：
+> source 'https://github.com/CocoaPods/Specs.git'
+
+> platform :ios, '8.0'
+
+> pod 'AFNetworking', '~> 3.0'
+
 
 ### AFURLSessionManager
 
