@@ -17,12 +17,13 @@
 * AFHTTPSessionManager
 
 #### 序列化
-* <AFURLRequestSerialization>
+* **AFURLRequestSerialization**
 	* AFHTTPRequestSerialization
 	* AFJSONSerialization
 	* AFPropertityListSerialization
 	
-* <AFURLResponseSerialization>
+	
+* **AFURLResponseSerialization**
 	* AFHTTPResponseSerialization
 	* AFJSONResponseSerialization
 	* AFXMLParserResponseSerialization
@@ -30,8 +31,7 @@
 	* AFImageResponseSerialization
 	* AFCompoundResponseSerialization
 	
-
-
+#### 附加功能
 
 
 ### AFURLSessionManager
