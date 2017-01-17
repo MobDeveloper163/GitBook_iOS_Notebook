@@ -36,9 +36,8 @@
 * AFNetworkReachabilityManager
 
 ### 使用
-
-
-### AFURLSessionManager
+#### AFURLSessionManager
+AFURLSessionManager创建并管理一个基于指定NSURLSessionConfiguration对象的NSURLSession对象，遵从<NSURLSessionTaskDelegate>, <NSURLSessionDataDelegate>, <NSURLSessionDownloadDelegate>, and <NSURLSessionDelegate>协议
 
 AFURLSessionManager遵从<NSURLSessionTaskDelegate>, <NSURLSessionDataDelegate>, <NSURLSessionDownloadDelegate>和 <NSURLSessionDelegate>，基于指定的NSURLSessionConfiguration对象创建和管理NSURLSession.
 
