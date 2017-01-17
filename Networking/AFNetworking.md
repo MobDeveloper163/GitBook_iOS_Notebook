@@ -164,3 +164,5 @@ NSDictionary *parameters = @{@"foo": @"bar", @"baz": @[@1, @2, @3]};
 > Content-Type: application/json
 
 > {"foo": "bar", "baz": [1,2,3]}
+
+#### Network Reachability Manager
