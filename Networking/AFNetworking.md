@@ -174,3 +174,15 @@ AFNetworkReachabilityManagerj监听域名、WWAN和Wifiw网络接口的地址是
 * Reachability是检测请求为什么失败的好工具
 	* 网络请求失败后，在告诉用户已离线比告诉他们一个准确的技术性的错误要好，比如“请求超时”
 
+#### SHARED NETWORK REACHABILITY
+```
+[[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+    NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+}];
+
+[[AFNetworkReachabilityManager sharedManager] startMonitoring];
+```
+### 安全策略
+AFSecurityPolicy通过安全连接评估针对固定的X.509证书和公用密钥的服务器信任。
+
+将固定的SSL证书添加到您的应用程序有助于防止中间人攻击和其他漏洞。 强烈建议处理敏感客户数据或财务信息的应用程序通过配置和启用SSL绑定的HTTPS连接路由所有通信。
