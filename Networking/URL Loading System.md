@@ -44,5 +44,12 @@ URL Loading System包含一些重要的帮助类，URL Loading Classes一起工�
 
 URL Loading类提供两个帮助类来提供附件的metadata，一个用于请求(NSURLRequest)本身，一个用于服务器响应（NSURLResponse）。
 
+NSURLRequest对象以协议无关的方式封装URL和任何协议特定的属性。
+
+> 注意：当客户端应用程序使用NSMutableURLRequest实例启动连接或下载时，会对请求进行深度复制。 在初始化下载后，对启动请求所做的更改不起作用。
+
+一些协议支持协议特定的属性。 例如，HTTP协议向NSURLRequest添加返回HTTP请求正文，标题和传输方法的方法。 它还添加了NSMutableURLRequest的方法来设置这些值。
+
+### Response Metadata
 
 
