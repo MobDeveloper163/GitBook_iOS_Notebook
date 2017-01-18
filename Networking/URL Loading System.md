@@ -11,3 +11,17 @@ URL系统使用以下协议为访问资源提供支持：
 * 本地文件URL(file://)
 * 数据URL（data://）
 
+URL Loading System包含一些重要的帮助类，URL Loading Classes一起工作。这些主要的帮助类分成五类：协议支持，授权和证书，Cookie存储，配置管理和缓存管理。
+
+![](/assets/url_loading.png)
+
+## URL Loading
+在URL Loading系统中最常用的类，允许应用获取URL的内容。你可以使用NSURLSession获取内容。你具体使用的方法大部分依赖于你希望拉取数据到内存还是硬盘。
+
+获取内容转换为data（在内存中）
+
+**有两种获取URL data的方式：**
+
+* 简单的请求，比如NSData对象或者磁盘上的文件，直接使用NSURLSession对象从URLSession获取内容
+
+*
