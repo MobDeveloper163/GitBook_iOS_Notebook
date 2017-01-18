@@ -42,7 +42,7 @@ URL Loading System包含一些重要的帮助类，URL Loading Classes一起工�
 
 ## Helper Classes
 
-URL Loading类提供两个帮助类来提供附件的metadata，一个用于请求本身，一个用于服务器响应（NSURLResponse）。
+URL Loading类提供两个帮助类来提供附件的metadata，一个用于请求(NSURLRequest)本身，一个用于服务器响应（NSURLResponse）。
 
 
 
