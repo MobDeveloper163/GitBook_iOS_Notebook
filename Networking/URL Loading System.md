@@ -34,6 +34,13 @@ URL Loading System包含一些重要的帮助类，URL Loading Classes一起工�
 
 ** 下载内容转换为文件 **
 
+* 简单的请求，比如NSData对象或者磁盘上的文件，直接使用NSURLSession对象从URLSession获取内容
+
+*更复杂的请求，比如上传数据，比如为NSURLSession提供一个NSURLRequest对象（或者可变的子类，NSMutableURLRequest）
+
+> 注意：使用NSURLSession对象启动的下载不会被缓存。如果你需要缓存结果，你的应用必须使用NSURLSession并自行把数据写进磁盘。
+
+## Helper Classes
 
 
 
