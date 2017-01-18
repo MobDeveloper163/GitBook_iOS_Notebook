@@ -24,4 +24,12 @@ URL Loading System包含一些重要的帮助类，URL Loading Classes一起工�
 
 * 简单的请求，比如NSData对象或者磁盘上的文件，直接使用NSURLSession对象从URLSession获取内容
 
-*
+*更复杂的请求，比如上传数据，比如为NSURLSession提供一个NSURLRequest对象（或者可变的子类，NSMutableURLRequest）
+
+不管使用哪种方式，你的应用都有两种获取相应数据的方式：
+* 提供一个完成处理block.The URL Loading类从服务器获取完数据后会调用这个blcok。
+* 提供自定义的代理。The URL Loading类在从数据源获取数据时周期性的调用代理的方法。如果需要，你的应用负责累积数据。
+
+
+
+
