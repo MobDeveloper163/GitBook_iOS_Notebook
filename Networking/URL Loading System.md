@@ -75,3 +75,4 @@ NSURLAuthenticationChallenge类封装了NSURLProtocol实现所需的用于认证
 
 NSURLAuthenticationChallenge实例由NSURLProtocol子类用来通知URL加载系统，需要认证。它们还被提供给NSURLSession的委托方法，以便于自定义认证处理。
 
+### 缓存管理
