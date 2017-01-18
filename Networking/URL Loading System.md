@@ -30,6 +30,10 @@ URL Loading System包含一些重要的帮助类，URL Loading Classes一起工�
 * 提供一个完成处理block.The URL Loading类从服务器获取完数据后会调用这个blcok。
 * 提供自定义的代理。The URL Loading类在从数据源获取数据时周期性的调用代理的方法。如果需要，你的应用负责累积数据。
 
+除了数据本身，URL Loading类还为完成block和代理提供一个响应对象，响应对象包含与请求相关的metadata，比如MIME TYPE和内容长度。
+
+** 下载内容转换为文件 **
+
 
 
 
