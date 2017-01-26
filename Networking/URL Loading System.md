@@ -53,7 +53,7 @@ NSURLRequest对象以协议无关的方式封装URL和任何协议特定的属�
 
 ### Response Metadata
 
-从服务器到请求的响应可以被看作两部分：描述内容的元数据和内容数据本身。 大多数协议通用的元数据由NSURLResponse类封装，由MIME类型，预期的内容长度，文本编码（如果适用）和提供响应的URL组成。 NSURLResponse的协议特定子类可以提供额外的元数据。 例如，NSHTTPURLResponse存储Web服务器返回的头和状态代码。
+从服务器到请求的响应可以被看作两部分：描述内容的元数据和内容数据本身。 大多数协议通用的元数据由NSURLResponse类封装，由MIME类型，预期的内容长度，文本编码（如果适用）和提供响应的URL组                                  成。 NSURLResponse的协议特定子类可以提供额外的元数据。 例如，NSHTTPURLResponse存储Web服务器返回的头和状态代码。
 
 > 要点：只有响应的元数据存储在NSURLResponse对象中。 各种URL加载类通过完成处理程序块或对象的委托向您的应用程序提供响应数据本身。
 NSCachedURLResponse实例封装了NSURLResponse对象，URL内容数据以及应用程序提供的任何其他信息。
