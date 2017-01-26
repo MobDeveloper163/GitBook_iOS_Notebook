@@ -3,8 +3,6 @@
 ## 简介
 
 * [作者简介](README.md)
-* [前言](README.md)
-* [序言](README.md)
 
 ## C语言
 
