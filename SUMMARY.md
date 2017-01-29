@@ -76,23 +76,15 @@
 * [第十九章 面试](Interview/chapter19.md)
 * [第二十章 个人心得](个人心得/学习心得.md)
   * [优雅的使用计算机](个人心得/优雅的使用计算机.md)
+* [第二十一章 优秀博客收集](优秀博客收集/chapter21.md)
   * [优秀博客收集](优秀博客收集/优秀博客收集.md)
   * [网络](优秀博客收集/网络.md)
   * [程序员的出路](优秀博客收集/程序员的出路.md)
   * [开源库](优秀博客收集/开源库.md)
-## 工具收集
-
-* [工具收集](工具收集/工具收集.md)
+* [第二十一章 工具收集](工具收集/工具收集.md)
   * [pch](工具收集/pch.md)
   * [iOS gitignore file](工具收集/iOS Git Ignore File.md)
   * [iOS开发常用的代码片段](工具收集/Code Snippet.md)
-
-
-
-
-
-
-## 我的文章
 
 * [CocoaPods安装](我的文章/iOS/CocoaPods安装.md)
 * [创建自己的CocoaPods](我的文章/iOS/创建自己的CocoaPods.md)
