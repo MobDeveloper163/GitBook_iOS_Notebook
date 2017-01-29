@@ -28,7 +28,7 @@
 
 * [User Interface](User Interface/03-user-interface.md)
   * [01-Basic Views](User Interface/03-user-interface.md)
-  * 02-AutoLayout\(User Interface/03-user-interface.md)
+  * [02-AutoLayout](User Interface/03-user-interface.md)
   
 * [Animation](Animation/05-animation.md)
 
