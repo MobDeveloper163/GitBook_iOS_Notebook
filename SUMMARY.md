@@ -67,7 +67,7 @@
   * [2. JavaScript](混合开发/JavaScript.md)
 * [第十六章 多媒体开发](Multimedia/chapter16.md)
   * [1. Audio Session](Multimedia/AudioSession.md)
-  * [2. AVAudioPlayer](Multimedia/AVAudioPlayer)
+  * [2. AVAudioPlayer](Multimedia/AVAudioPlayer.md)
 * [第十七章 版本控制工具](版本控制工具/chapter17.md)
   * [Git](版本控制工具/git.md)
 * [第十八章 Popular Sites](PopularWebsites/chapter18.md)
