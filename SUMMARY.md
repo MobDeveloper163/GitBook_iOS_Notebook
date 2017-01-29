@@ -70,7 +70,7 @@
   * [1. Audio Session](Multimedia/AudioSession.md)
   * [2. AVAudioPlayer](Multimedia/AVAudioPlayer)
 * [第十七章 版本控制工具](版本控制工具/chapter17.md)
-
+  * [Git](版本控制工具/git.md)
 * Popular Sites
 * Interview
 * [个人心得](个人心得/学习心得.md)
@@ -94,10 +94,8 @@
   * [iOS开发常用的代码片段](工具收集/Code Snippet.md)
 
 
-## 版本控制工具
 
-* [Version Control System](版本控制工具/version-control-system.md)
-  * [Git](版本控制工具/git.md)
+
 
 
 ## 我的文章
