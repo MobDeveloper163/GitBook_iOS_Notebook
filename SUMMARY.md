@@ -50,7 +50,7 @@
   * [加密、解密](Networking/加密、解密.md)
   * [混合开发](Networking/混合开发.md)
 * [第十一章 优化](Optimization/chapter11.md)
-* [第十二章 Developer Tools](developer-tools.md)
+* [第十二章 Developer Tools](DeveloperTools/developer-tools.md)
   * [1. Xcode](DeveloperTools/xcode.md)
 * [第十三章 Third-Party Library](third-party-library.md)
   * [解压缩](ThirdPartyLibrary/解压缩.md)
