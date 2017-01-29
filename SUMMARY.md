@@ -67,7 +67,8 @@
   * [1. HTML](混合开发/HTML.md)
   * [2. JavaScript](混合开发/JavaScript.md)
 * [第十六章 多媒体开发](Multimedia/chapter16.md)
-  * [Audio Session](Multimedia/AudioSession.md)
+  * [1. Audio Session](Multimedia/AudioSession.md)
+  * [2. AVAudioPlayer](Multimedia/AVAudioPlayer)
 * Popular Sites
 * Interview
 * [个人心得](个人心得/学习心得.md)
