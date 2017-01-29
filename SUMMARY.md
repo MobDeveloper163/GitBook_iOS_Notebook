@@ -64,11 +64,8 @@
   * [响应式编程](ThirdPartyLibrary/响应式编程.md)
 * [第十四章 Testing](Testing/chapter15.md)
 * [第十五章 Hybrid App](混合开发/chapter15.md)
-
-## Javascript
-
-* [Javascript](javascript.md)
-
+  * [1. HTML](混合开发/HTML.md)
+  * [2. JavaScript](混合开发/JavaScript.md)
 ## Popular Sites
 
 * Popular Sites
