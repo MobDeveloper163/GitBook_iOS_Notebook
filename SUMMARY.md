@@ -69,6 +69,8 @@
 * [第十六章 多媒体开发](Multimedia/chapter16.md)
   * [1. Audio Session](Multimedia/AudioSession.md)
   * [2. AVAudioPlayer](Multimedia/AVAudioPlayer)
+* [第十七章 版本控制工具](版本控制工具/chapter17.md)
+
 * Popular Sites
 * Interview
 * [个人心得](个人心得/学习心得.md)
