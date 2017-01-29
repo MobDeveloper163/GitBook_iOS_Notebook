@@ -83,8 +83,8 @@
   * [开源库](优秀博客收集/开源库.md)
 * [第二十一章 工具收集](工具收集/工具收集.md)
   * [pch](工具收集/pch.md)
-  * [iOS gitignore file](工具收集/iOS Git Ignore File.md)
-  * [iOS开发常用的代码片段](工具收集/Code Snippet.md)
+  * [iOS gitignore file](工具收集/iOSGitIgnoreFile.md)
+  * [iOS开发常用的代码片段](工具收集/CodeSnippet.md)
 
 * [CocoaPods安装](我的文章/iOS/CocoaPods安装.md)
 * [创建自己的CocoaPods](我的文章/iOS/创建自己的CocoaPods.md)
