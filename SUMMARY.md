@@ -51,10 +51,7 @@
   * [混合开发](Networking/混合开发.md)
 * [第十一章 优化](Optimization/chapter11.md)
 * [第十二章 Developer Tools](developer-tools.md)
-
-## Third-Party Library
-
-* [Third-Party Library](third-party-library.md)
+* [第十三章 Third-Party Library](third-party-library.md)
   * [解压缩](Third Party Library/解压缩.md)
   * [网络](Third Party Library/networking-library.md)
   * [动画](Third Party Library/动画.md)
