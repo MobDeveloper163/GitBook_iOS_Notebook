@@ -51,6 +51,8 @@
   * [混合开发](Networking/混合开发.md)
 * [第十一章 优化](Optimization/chapter11.md)
 * [第十二章 Developer Tools](developer-tools.md)
+  * [Xcode](Developer Tools/xcode.md)
+  * Document
 * [第十三章 Third-Party Library](third-party-library.md)
   * [解压缩](ThirdPartyLibrary/解压缩.md)
   * [网络](ThirdPartyLibrary/networking-library.md)
@@ -73,19 +75,12 @@
   * [Git](版本控制工具/git.md)
 * [第十八章 Popular Sites](PopularWebsites/chapter18.md)
 * [第十九章 面试](Interview/chapter19.md)
-* [个人心得](个人心得/学习心得.md)
+* [第二十章 个人心得](个人心得/学习心得.md)
   * [优雅的使用计算机](个人心得/优雅的使用计算机.md)
-* [优秀博客收集](优秀博客收集/优秀博客收集.md)
+  * [优秀博客收集](优秀博客收集/优秀博客收集.md)
   * [网络](优秀博客收集/网络.md)
-  * 程序员的思考
-    * [程序员的出路](优秀博客收集/程序员的出路.md)
+  * [程序员的出路](优秀博客收集/程序员的出路.md)
   * [开源库](优秀博客收集/开源库.md)
-  
-* [Developer Tools](Developer Tools/developer-tools.md)
-  * [Xcode](Developer Tools/xcode.md)
-  * Document
-
-
 ## 工具收集
 
 * [工具收集](工具收集/工具收集.md)
