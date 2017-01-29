@@ -22,7 +22,7 @@
   * [Swift单词](Swift/swift.md)
   * [Swift基础](Swift/Swift基础.md)
 * [第四章 algorithm](Algorithm/10-algorithm.md)
-* [第五章 设计模式](Design Pattern/chapter5.md)
+* [第五章 设计模式](DesignPattern/chapter5.md)
 * [第六章 User Interface](UserInterface/03-user-interface.md)
   * [01-Basic Views](UserInterface/03-user-interface.md)
   * [02-AutoLayout](UserInterface/03-user-interface.md)
