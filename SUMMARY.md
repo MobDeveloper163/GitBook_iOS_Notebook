@@ -50,7 +50,7 @@
 * [第十一章 优化](Optimization/chapter11.md)
 * [第十二章 Developer Tools](DeveloperTools/developer-tools.md)
   * [1. Xcode](DeveloperTools/xcode.md)
-* [第十三章 Third-Party Library](third-party-library.md)
+* [第十三章 Third-Party Library](ThirdPartyLibrary/chapter13.md)
   * [解压缩](ThirdPartyLibrary/解压缩.md)
   * [网络](ThirdPartyLibrary/networking-library.md)
   * [动画](ThirdPartyLibrary/动画.md)
