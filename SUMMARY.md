@@ -1,24 +1,17 @@
 # Summary
 
-## 简介
-
 * [作者简历](About/关于作者.md)
-
-## C语言
-
 * [C语言](chapter1.md)
-
-## Objective-C
 * [Objective-C](Objective-C/Objective-C.md)
-* [属性](Objective-C/property.md)
-* [协议](Objective-C/协议.md)
-* [分类](Objective-C/分类.md)
-* [扩展](Objective-C/扩展.md)
-* [消息传递](Objective-C/消息传递.md)
-* [内存管理](Objective-C/内存管理.md)
-* [预处理器](Objective-C/预处理器.md)
-* [Runtime运行时系统](Objective-C/Runtime.md)
-* [Runtime](runtime.md)
+  * [属性](Objective-C/property.md)
+  * [协议](Objective-C/协议.md)
+  * [分类](Objective-C/分类.md)
+  * [扩展](Objective-C/扩展.md)
+  * [消息传递](Objective-C/消息传递.md)
+  * [内存管理](Objective-C/内存管理.md)
+  * [预处理器](Objective-C/预处理器.md)
+  * [Runtime运行时系统](Objective-C/Runtime.md)
+  * [Runtime](runtime.md)
   * [Runtime版本和平台](Objective-C/Runtime/01-runtime-versions-and-platforms.md)
   * [与Runtime交互](Objective-C/Runtime/02-与runtime交互.md)
   * [消息](Objective-C/Runtime/03-消息.md)
@@ -26,29 +19,17 @@
   * [消息转发](Objective-C/Runtime/05-消息转发.md)
   * [Category](Objective-C/Runtime/06-category.md)
 
-
-## Swift
-
 * [Swift单词](Swift/swift.md)
 * [Swift基础](Swift/Swift基础.md)
 
-## algorithm
-
 * [algorithm](Algorithm/10-algorithm.md)
-
-## Design Pattern
 
 * [设计模式](Design Pattern/10-algorithm.md)
 
-## User Interface
-
 * [User Interface](User Interface/03-user-interface.md)
   * [01-Basic Views](User Interface/03-user-interface.md)
-  * 02-AutoLayout\(User Interface\/03-user-interface.md\)
-
-
-## Animation
-
+  * 02-AutoLayout\(User Interface/03-user-interface.md)
+  
 * [Animation](Animation/05-animation.md)
 
 ## Storage
