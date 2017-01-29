@@ -1,7 +1,7 @@
 # Summary
 
 * [作者简历](About/关于作者.md)
-* [C语言](chapter1.md)
+* [第一章 C语言](C语言/chapter1.md)
 * [Objective-C](Objective-C/Objective-C.md)
   * [属性](Objective-C/property.md)
   * [协议](Objective-C/协议.md)
@@ -31,19 +31,13 @@
   * [02-AutoLayout](User Interface/03-user-interface.md)
   
 * [Animation](Animation/05-animation.md)
-
-## Storage
-
 * [Core Data](Storage/Core Data.md)
 
-## Thread
 
 * [01-NSThread](Thread/NSThread.md)
 * [02-NSOperation](Thread/NSOperation.md)
 * [03-GCD](Thread/03-GCD.md)
 * [运行循环Runloop](Thread/运行循环Runloop)
-
-## Networking
 
 * [AFNetworking](Networking/AFNetworking.md)
 * [URL Loading System](Networking/URL Loading System.md)
