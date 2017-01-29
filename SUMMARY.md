@@ -66,32 +66,18 @@
 * [第十五章 Hybrid App](混合开发/chapter15.md)
   * [1. HTML](混合开发/HTML.md)
   * [2. JavaScript](混合开发/JavaScript.md)
-## Popular Sites
-
+* [第十六章 多媒体开发](Multimedia/chapter16.md)
+  * [Audio Session](Multimedia/Audio Session.md)
 * Popular Sites
-
-## Interview
-
 * Interview
-
-## 个人心得
-
 * [个人心得](个人心得/学习心得.md)
   * [优雅的使用计算机](个人心得/优雅的使用计算机.md)
-
-
-## 优秀博客收集
-
 * [优秀博客收集](优秀博客收集/优秀博客收集.md)
   * [网络](优秀博客收集/网络.md)
   * 程序员的思考
     * [程序员的出路](优秀博客收集/程序员的出路.md)
-
   * [开源库](优秀博客收集/开源库.md)
-
-
-## Developer Tools
-
+  
 * [Developer Tools](Developer Tools/developer-tools.md)
   * [Xcode](Developer Tools/xcode.md)
   * Document
@@ -116,9 +102,7 @@
 * [CocoaPods安装](我的文章/iOS/CocoaPods安装.md)
 * [创建自己的CocoaPods](我的文章/iOS/创建自己的CocoaPods.md)
 
-## 多媒体
 
-* [Audio Session](Multimedia/Audio Session.md)
 
 ## 面试
 * [面试题](面试/简答题.md)
