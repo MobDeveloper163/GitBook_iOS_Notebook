@@ -1,5 +1,3 @@
-# Summary
-
 * [作者简历](About/关于作者.md)
 * [第一章 C语言](C语言/chapter1.md)
 * [第二章 Objective-C](Objective-C/Objective-C.md)
