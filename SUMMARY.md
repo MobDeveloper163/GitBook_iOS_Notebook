@@ -22,15 +22,12 @@
   * [Swift单词](Swift/swift.md)
   * [Swift基础](Swift/Swift基础.md)
 * [第四章 algorithm](Algorithm/10-algorithm.md)
-
 * [第五章 设计模式](Design Pattern/chapter5.md)
-
-* [User Interface](User Interface/03-user-interface.md)
+* [第六章 User Interface](User Interface/03-user-interface.md)
   * [01-Basic Views](User Interface/03-user-interface.md)
   * [02-AutoLayout](User Interface/03-user-interface.md)
-  
-* [Animation](Animation/05-animation.md)
-* [Core Data](Storage/Core Data.md)
+* [第七章 Animation](Animation/05-animation.md)
+* [第八章 Core Data](Storage/Core Data.md)
 
 
 * [01-NSThread](Thread/NSThread.md)
