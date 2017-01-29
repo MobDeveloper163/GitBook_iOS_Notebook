@@ -23,7 +23,7 @@
   * [Swift基础](Swift/Swift基础.md)
 * [第四章 algorithm](Algorithm/10-algorithm.md)
 
-* [第五章 设计模式](Design Pattern/10-algorithm.md)
+* [第五章 设计模式](Design Pattern/chapter5.md)
 
 * [User Interface](User Interface/03-user-interface.md)
   * [01-Basic Views](User Interface/03-user-interface.md)
