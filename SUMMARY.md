@@ -49,11 +49,8 @@
   * [Base64编码、解码](Networking/加密、解密.md)
   * [加密、解密](Networking/加密、解密.md)
   * [混合开发](Networking/混合开发.md)
-* Optimization
-
-## Developer Tools
-
-* [Developer Tools](developer-tools.md)
+* [第十一章 优化](Optimization/chapter11.md)
+* [第十二章 Developer Tools](developer-tools.md)
 
 ## Third-Party Library
 
