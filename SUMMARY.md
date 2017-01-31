@@ -25,7 +25,7 @@
   * [01-Basic Views](UserInterface/03-user-interface.md)
   * [02-AutoLayout](UserInterface/03-user-interface.md)
 * [第七章 Animation](Animation/05-animation.md)
-* [第八章 Core Data](Storage/CoreData.md)
+* [第八章 Core Data](Storage/chapter8.md)
 * [第九章 多线程](Thread/chapter9.md)
   * [01-NSThread](Thread/NSThread.md)
   * [02-NSOperation](Thread/NSOperation.md)
