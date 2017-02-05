@@ -1,6 +1,6 @@
 ## 并行操作 - NSOperation
 
-* NSOperation 是抽象类，用于封装单个任务的代码和相关数据。虽然是抽象类，但是它NSOperation的基本实现包含重要的逻辑来保证任务安全执行。需要使用它的子类或者系统定义的子类来做实际的任务。在处理非并行任务时，具体子类通常只用重写main方法。在处理并行任务时，至少必须至少重写start、isConcurrent、isExecuting和isFinished方法。
+* NSOperation 是抽象类，用于封装单个任务的代码和相关数据。虽然是抽象类，但是NSOperation的基本实现包含重要的逻辑来保证任务安全执行。需要使用它的子类或者系统定义的子类来做实际的任务。在处理非并行任务时，具体子类通常只用重写main方法。在处理并行任务时，至少必须至少重写start、isConcurrent、isExecuting和isFinished方法。
 
 * NSBlockOperation 是NSOperation的一个具体子类，用于并发执行一个或多个块对象。只有当自己的所有的块对象都执行完后，NSBlockOperation对象才会被认为完成了执行操作。
 
