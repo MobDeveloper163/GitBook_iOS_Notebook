@@ -15,6 +15,7 @@ initWithTarget:selector:object
 ```objective-c
 [NSThread sleepForTimeInterval:5.0];
 ```
+
 设置线程优先权：
 
 ```objective-c
