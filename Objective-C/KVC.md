@@ -3,7 +3,7 @@ Objective-C键值编程特性统称为键值编码（Key-Value Coding, KVC）和
 
 ## 使用键值编码获取和设置属性的值
 
-```
+```objective-c
     [NSObject valueForKey:]; // 获取属性的值
     [NSObject setValue:forKey:] // 设置属性的值
 ```
