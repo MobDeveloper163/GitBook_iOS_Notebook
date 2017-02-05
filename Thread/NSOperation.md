@@ -6,7 +6,8 @@
 
 * NSInvocationOperation NSOperation的一个具体子类，用于根据指定的对象和方法选择器创建操作对象
 
-系统提供了两个NSOperation的具体子类，NSBlockOperation和NSInvocationOperation.
+
+## NSOperation Queue
 
 一个Operation对象只能执行一次,不能再次执行。通常它们放在operation queue（NSOperation Queue的实例）中执行。Operation Queue有时直接执行它的operations或者利用GCD在其他线程间接的执行。
 
