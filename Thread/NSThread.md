@@ -21,6 +21,8 @@ initWithTarget:selector:object
 [NSThread setThreadPriority:0.5];
 ```
 
+## 线程同步
+
 
 
 
