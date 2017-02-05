@@ -1,4 +1,4 @@
-\*\* NSThread
+## NSThread
 
 NSThread提供了用于显式创建和管理线程的API，该类包含的方法可以创建和初始化NSThread对象、启动和停止线程、配置线程和查询线程及其执行环境。
 
