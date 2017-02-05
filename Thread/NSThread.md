@@ -17,7 +17,6 @@ initWithTarget:selector:object
 ```
 
 设置线程优先权：
-
 ```objective-c
 [NSThread setThreadPriority:0.5];
 ```
