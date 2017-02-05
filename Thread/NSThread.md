@@ -11,6 +11,12 @@ detachNewThreadSelector:toTarget:withObject:
 initWithTarget:selector:object
 ```
 
+暂停线程：
+```objective-c
+[NSThread sleepForTimeInterval:5.0];
+```
+
+
 
 
 
