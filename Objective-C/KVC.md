@@ -8,4 +8,5 @@ Objective-C键值编程特性统称为键值编码（Key-Value Coding, KVC）和
     [NSObject setValue:forKey:] // 设置属性的值
 ```
 
+## 键值编码的优点
 
