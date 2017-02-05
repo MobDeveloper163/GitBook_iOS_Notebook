@@ -22,7 +22,9 @@ initWithTarget:selector:object
 ```
 
 ## 线程同步
-
+1. 锁
+    Foundation矿建含有多个类（NSLock、 NSRecursiveLock、NSConditionLock和NSDistributedLock），使用这些类可以实现各种用于同步访问贡状态操作的锁。锁用于保护关键部分（即用于访问共享数据或资源的共享部分），这些代码不允许由多个线程以并发方式执行。
+    NSLock类为并发编程提供了一种基本的互斥锁。它遵循NSLocking协议，并因此会实现分别用于获取和释放锁的lock和unlock方法。
 
 
 
