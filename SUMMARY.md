@@ -73,7 +73,7 @@
   * [2. JavaScript](混合开发/JavaScript.md)
 * [第十六章 多媒体开发](Multimedia/chapter16.md)
   * [图片](Multimedia/获取图片.md)
-  * [图片](Multimedia/获取图片.md)
+  * [视频](Multimedia/获取图片.md)
 * * [1. Audio Session](Multimedia/AudioSession.md)
   * [2. AVAudioPlayer](Multimedia/AVAudioPlayer.md)
 * [第十七章 版本控制工具](版本控制工具/chapter17.md)
