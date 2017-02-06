@@ -33,10 +33,15 @@ NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接�
 ```
 // 使用KVC获取多个属性的值
 [NSObject dictionaryWithValuesForKeys:];
+
 // 使用KVC设置多个属性的值
 [NSObject setValuesForKeysWithDictionary:];
+
 // 如果没有找到属性的访问方法，键值编码机制是否能直接访问属性的支持变量。YES表示能直接访问实例变量，NO表示不能。NSObject类默认实现会返回YES，通常应该重写这个类，以便控制这种行为。
 [NSObject accessInstanceVariablesDirectly];
+
+// 
+
 ```
 
 
