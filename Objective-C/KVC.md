@@ -5,7 +5,7 @@ Objective-C键值编程特性统称为键值编码（Key-Value Coding, KVC）和
 * 通过名称（键）间接访问对象的属性，而不是直接调用访问方法；
 * 将键和属性访问方法或属性支持变量对应起来；
 
-NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接访问对象的机制。该协议声明了键值编码API，含有类、实例方法和常量值。使用这些方法可以获取和设置属性值、检验属性，以及更改用于获取属性键值编码方法的默认行为。
+NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接访问对象的机制。该协议声明了键值编码API，含有类、实例方法和常量值。使用这些方法可以获取和设置属性值，执行基于键值编码的属性验证，以及更改用于获取属性键值编码方法的默认行为。
 
 ## 使用键值编码获取和设置属性的值
 
@@ -21,17 +21,25 @@ NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接�
 * 降低耦合性。通过KVC访问属性可以减少各个软件组件之间的耦合性，从而提高软件的可维护性。
 * 简化代码。通过KVC可以减少代码量，在需要根据变量访问指定属性时尤为如此。无须使用条件表达式判断需要调用哪个属性的访问方法，而直接使用KVC表达式，并将变量作为其参数。
 
-# 键和键路径
+## 键和键路径
 键值编码使用键和路径访问属性。键用于标识属性的字符串。键路径指明了需要遍历的对象属性序列。KVC API支持访问对象中单个和多个属性，这些属性可以是对象类型、基本类型或C语言结构，基本类型和C语言结构会被自动封装为相应的对象类型，对象类型也可以自动展开为基础类型C语言结构。
 
 ```
     // 通过路径设置属性的值
     [NSObject setValue:forKeyPath:];
-    // 使用KVC获取多个属性的值
-    [NSObject dictionaryWithValuesForKeys:];
-    // 使用KVC设置多个属性的值
-    [NSObject setValuesForKeysWithDictionary:];
 ```
+
+## 键值编码API
+```
+// 使用KVC获取多个属性的值
+[NSObject dictionaryWithValuesForKeys:];
+// 使用KVC设置多个属性的值
+[NSObject setValuesForKeysWithDictionary:];
+// 如果没有找到属性的访问方法，键值编码机制是否能直接访问属性的支持变量。
+[NSObject accessInstanceVariablesDirectly];
+```
+
+
 
 
 
