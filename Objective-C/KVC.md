@@ -54,7 +54,15 @@ NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接�
 
 ## KVC是怎样通过键/键路径获取和设置属性值的？—— 键值搜索模式
 
-1. KVC通过搜索接受者类寻找名称符合格式set&lt;key&gt;:的访问方法
+1. KVC通过搜索接受者类寻找名称符合格式set&lt;key&gt;:的访问方法。其中&lt;key&gt;是属性的名称。
+2. 如果没有找到访问方法，接收对象类方法accessInstanceVariablesDirectly就会返回YES，setValue:forKey方法就会搜索对象类，寻找匹配\__key,\_is&lt;key&gt;,key或is&lt;key&gt;格式的实例变量。_
+3. 如果找到了匹配访问方法或实例变量，接收对象的setValue:forUndefinedKey:就会被调用。
+4. 如果没有找到合适的访问方法和实例变量，接收对象的setValue:forUndefinedKey:就会被调用。
+
+## 属性访问方法的命名约定
+
+* 属性获取方法的名称应该与属性名相同。但是对于布尔类型要在名称前面加is。
+* 属性设置方法的名称应使用set&lt;key&gt;格式，就是在属性名前面加set
 
 
 
