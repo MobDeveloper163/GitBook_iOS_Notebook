@@ -70,22 +70,41 @@ NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接�
 
 ### 键值观察API
 
-```
+```objective-c
 // 添加观察者
 [NSObject addObserver:forKeyPath:options:context];
 
 // 移除观察者
 [NSObject removeObserver:forKeyPath:];
+
 ```
 
 * 支持特性和一对一关系属性
-* ```
+* ```objective-c
   // 更改属性前的通知
   willChangeValueForKey:
 
   // 更改属性后的通知
   didChangeValueForKey:
   ```
+
+* 支持一对多、有序关系属性
+* ```objective-c
+  willChange:valuesAtIndexes:forKey:
+  didChange:valuesAtIndexes:forKey:
+  ```
+
+* 支持一对多、无须关系属性
+* ```objective-c
+  willChangeValueForKey:withSetMutation:usingObject:
+  didChangeValueForKey:withSetMutation:usingObject:
+  ```
+
+ NSObject支持自动/手动调用观察者对象中正确的更改通知的方法。如果下面的方法返回YES表示自动更改通知功能，否则为手动。为什么要使用实现手动更改通知？原因是更精细地控制更改通知的发送操作、消除不必要的通知（如新、旧属性值相同）、为通知分组。
+
+```objective-c
+automaticallyNotifiesObserversFor:
+```
 
 
 
