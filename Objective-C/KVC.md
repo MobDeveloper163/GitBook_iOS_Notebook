@@ -35,7 +35,7 @@ NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接�
 
 ## 键值编码API
 
-```
+```objective-c
 // 使用KVC获取多个属性的值
 [NSObject dictionaryWithValuesForKeys:];
 
