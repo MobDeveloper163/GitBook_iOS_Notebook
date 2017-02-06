@@ -24,7 +24,7 @@ Objective-C键值编程特性统称为键值编码（Key-Value Coding, KVC）和
     // 使用KVC获取多个属性的值
     [NSObject dictionaryWithValuesForKeys:];
     // 使用KVC设置多个属性的值
-    [NSObject setValuesForKeys:];
+    [NSObject setValuesForKeysWithDictionary:];
 ```
 
 
