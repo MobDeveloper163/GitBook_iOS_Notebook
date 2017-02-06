@@ -75,7 +75,7 @@
   * [图片](Multimedia/images/图片.md)
     * [获取图片](Multimedia/images/获取图片.md)
   * [视频](Multimedia/videos/视频.md)
-  * [获取视频](Multimedia/videos/获取视频.md)
+    * [获取视频](Multimedia/videos/获取视频.md)
 * * [1. Audio Session](Multimedia/AudioSession.md)
   * [2. AVAudioPlayer](Multimedia/AVAudioPlayer.md)
 * [第十七章 版本控制工具](版本控制工具/chapter17.md)
