@@ -72,6 +72,7 @@
   * [1. HTML](混合开发/HTML.md)
   * [2. JavaScript](混合开发/JavaScript.md)
 * [第十六章 多媒体开发](Multimedia/chapter16.md)
+  * [图片](Multimedia/images/图片.md)
   * [获取图片](Multimedia/images/获取图片.md)
   * [获取视频](Multimedia/videos/获取视频.md)
 * * [1. Audio Session](Multimedia/AudioSession.md)
