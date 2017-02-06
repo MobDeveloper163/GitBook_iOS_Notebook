@@ -28,7 +28,7 @@ NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接�
 
 键值编码使用键和路径访问属性。键用于标识属性的字符串。键路径指明了需要遍历的对象属性序列。KVC API支持访问对象中单个和多个属性，这些属性可以是对象类型、基本类型或C语言结构，基本类型和C语言结构会被自动封装为相应的对象类型，对象类型也可以自动展开为基础类型C语言结构。
 
-```
+```objective-c
     // 通过路径设置属性的值
     [NSObject setValue:forKeyPath:];
 ```
@@ -48,14 +48,13 @@ NSObject类实现了NSKeyValueCoding协议，该协议定义了通过键间接�
 // 检验属性值
 [NSObject validateValue:forKey:error:];
 [validateValue:forKeyPath:error];
-
 ```
 
 因为键值编码使用键值访问属性，必然可能存在处理的输入键不能与对象的属性对应的情况。使用NSKeyValueCoding协议的valueForUndefinedKey:和setValue:forUndefinedKey:方法可以处理键值编码未定义键的情况。未定义键方法的默认实现会抛出NSUndefinedKeyException。可以在子类中重写这些方法，为未定义的键返回自定义的值。
 
 ## KVC是怎样通过键/键路径获取和设置属性值的？—— 键值搜索模式
 
-1. KVC通过搜索接受者类寻找名称符合格式set&lt;key&gt;:的方法问方法
+1. KVC通过搜索接受者类寻找名称符合格式set&lt;key&gt;:的访问方法
 
 
 
