@@ -71,3 +71,5 @@ NSEntityDescription insertNewObjectForEntityForName: inManagedObjectContext:
 ## Core Data适用场合
 如果应用程序要保存的设置数据太多，以致NSUserDefaults及“特性列表”（property list）这种简单的存储方案无法应付，那么就会出现内存占用量方面的问题。解决办法是直接使用数据库或通过Core Data来间接操作数据库。选用CoreData的好处是，不用再花时间编写数据库接口的代码了。此外，你还将享受性能方面的优势，而且可以使用诸如撤销及验证等强大的功能
 
+
+## Core Data后端SQL的可见性
