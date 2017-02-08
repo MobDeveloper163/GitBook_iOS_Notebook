@@ -73,3 +73,9 @@ NSEntityDescription insertNewObjectForEntityForName: inManagedObjectContext:
 
 
 ## Core Data后端SQL的可见性
+开启SQL Debug调试选项可以提供足够的信息，告诉你这些操作背后所发生的事情，从而令你知道上述那些问题的答案。这个调试选项会把系统自动生成的SQL查询语句打印出来，使开发者深刻认识到Core Data的工作原理。
+1. 点击Product＞Scheme＞Edit Scheme...菜单项。
+2. 点击Run Grocery Dude，并切换到Argu-ments分页。
+3. 点击Arguments Passed On Launch区域中的“+”按钮，以新增参数。
+4. 输入新参数-com.apple.Core-Data.SQLDebug 3，然后点击OK按钮。
+
