@@ -64,8 +64,6 @@ Core Data 是一个模型层的技术。Core Data 帮助你建立代表程序状
 NSEntityDescription insertNewObjectForEntityForName: inManagedObjectContext:
 ```
 
-
-
 ## 托管对象上下文
 托管对象上下文，其中包含多个托管对象。托管对象上下文负责管理其中对象的生命期（lifecycle），并且负责提供许多强大的功能，诸如faulting、变更追踪（change track-ing）、验证（validation）等。托管对象上下文也可以不止一个。
 
