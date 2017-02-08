@@ -48,12 +48,14 @@ Core Data 是一个模型层的技术。Core Data 帮助你建立代表程序状
 属性（attribute）是实体的特征（property）。属性的名称必须以小写字母开头，而且不应该与NSObject或NSManagedObject方法重名。Xcode不允许开发者违背这条规则，如果违背了，它会给出警告，比方说，把实体的属性名设为“description”就是非法的。
 
 #### 实体的属性与托管对象的特性的对应关系
-
 * 实体中的Date属性会成为类里的NSDate特性。
 * 实体中的String属性会成为类里的NSString特性。
 * 实体中的Decimal属性会成为类里的NS-DecimalNumber特性，而其他各种数值数据类型会成为类里的NSNumber特性。
 * 实体中的Binary Data属性会成为类里的NSData特性。
 * 实体中的Tranformable属性，会成为类里的id特性。
+
+#### 托管对象的类文件
+托管对象类的实现文件只是给各个特性都添加了@dynamic修饰符而已。Core Data用这种方式告诉大家：获取及设置特性值所需的方法都会动态地生成，不用开发者自己去实现。
 
 ## 托管对象上下文
 托管对象上下文，其中包含多个托管对象。托管对象上下文负责管理其中对象的生命期（lifecycle），并且负责提供许多强大的功能，诸如faulting、变更追踪（change track-ing）、验证（validation）等。托管对象上下文也可以不止一个。
