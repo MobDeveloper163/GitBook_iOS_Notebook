@@ -28,8 +28,6 @@ Core Data 是一个模型层的技术。Core Data 帮助你建立代表程序状
 
 托管对象模型由一系列实体描述对象构成，这种对象就叫做实体。实体，用于创建托管对象。托管对象模型可以拥有一个或多个实体，每个应用程序的实体数量会有所差别。有了托管对象之后，我们就可以用Objective-C代码来操作其中的数据了。
 
-### 实体设计 
-
 #### 设计实体的步骤
 而在设计实体时，你需要做的则是：
 * 配置实体名称（entity name）。
@@ -73,8 +71,3 @@ NSEntityDescription insertNewObjectForEntityForName: inManagedObjectContext:
 ## Core Data适用场合
 如果应用程序要保存的设置数据太多，以致NSUserDefaults及“特性列表”（property list）这种简单的存储方案无法应付，那么就会出现内存占用量方面的问题。解决办法是直接使用数据库或通过Core Data来间接操作数据库。选用CoreData的好处是，不用再花时间编写数据库接口的代码了。此外，你还将享受性能方面的优势，而且可以使用诸如撤销及验证等强大的功能
 
-## GroceryDude
-### CoreDataHelper
-* 初始化托管对象模型
-* 根据托管对象模型来创建持久化存储区，并据此初始化持久化存储协调器
-* 根据持久化存储协调器来初始化托管对象上下文
