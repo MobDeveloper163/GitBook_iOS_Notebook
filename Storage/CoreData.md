@@ -84,8 +84,11 @@ Core Data 是一个模型层的技术。Core Data 帮助你建立代表程序状
 
 ```
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Item"];
-        NSError *error = nil;
-        NSArray<Item *> *managedObjs = [self.coreDataHelper.context executeFetchRequest:request error:&error];
+     // 查询结果按照名字字母升序排列
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+    [request setSortDescriptors:@[sortDescriptor]];
+    NSError *error = nil;
+    NSArray<Item *> *managedObjs = [self.coreDataHelper.context executeFetchRequest:request error:&error];
 ```
 
 
