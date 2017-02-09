@@ -92,12 +92,20 @@ Core Data 是一个模型层的技术。Core Data 帮助你建立代表程序状
     NSError *error = nil;
     NSArray<Item *> *managedObjs = [self.coreDataHelper.context executeFetchRequest:request error:&error];
     
-    // 查询结果过滤，也可以在xx.xcdatamodeld中配置
+    // 查询结果过滤
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name beginswith 'M'"];
     [managedObjs filteredArrayUsingPredicate:predicate];
 ```
 
+> 假如每次获取托管对象时都要手工编写谓词格式确实很累人，幸好Xcode的Data Model De-signer有预定义获取请求的功能。这些可复用的模板比谓词更容易配置，而且还能减少重复代码。只需根据应用程序的模型来操作一系列下拉列表框及文本框，即可配置好一份获取请求模板。但如果要自定义AND、OR这样的逻辑组合，那么这个模板就无法满足要求了，此时仍然需要通过代码来指定谓词。
 
+
+### Core Data删除数据
+
+
+```objective-c
+ [NSManagedObjectContext deleteObject:];
+```
 
 
 
