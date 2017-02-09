@@ -74,12 +74,20 @@ Core Data 是一个模型层的技术。Core Data 帮助你建立代表程序状
 
 ## Core Data数据操作
 
-#### Core Data插入数据
+### Core Data插入数据
 新对象是由NSEntity-Description按照指定的名称并根据某个特定的实体而创建出来的。除了要指定对象所依据的实体之外，还需提供指向托管对象上下文的指针，创建好的托管对象将会放在那个上下文里面。
 
 ```objective-c
 [NSEntityDescription insertNewObjectForEntityForName: inManagedObjectContext:];
 ```
+### Core Data查询数据
+
+```
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Item"];
+        NSError *error = nil;
+        NSArray<Item *> *managedObjs = [self.coreDataHelper.context executeFetchRequest:request error:&error];
+```
+
 
 
 
