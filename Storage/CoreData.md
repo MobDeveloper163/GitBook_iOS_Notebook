@@ -92,7 +92,7 @@ Core Data 是一个模型层的技术。Core Data 帮助你建立代表程序状
     NSError *error = nil;
     NSArray<Item *> *managedObjs = [self.coreDataHelper.context executeFetchRequest:request error:&error];
     
-    // 查询结果过滤
+    // 查询结果过滤，也可以在xx.xcdatamodeld中配置
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name beginswith 'M'"];
     [managedObjs filteredArrayUsingPredicate:predicate];
 ```
