@@ -36,6 +36,7 @@
     * [2. 托管对象模型的迁移](Storage/CoreData/托管对象模型的迁移.md)
     * [Core Data官方文档翻译](Storage/CoreData/官方文档翻译/README.md)
       * [什么是Core Data](Storage/CoreData/官方文档翻译/什么是CoreData.md)
+      * [创建托管对象](Storage/CoreData/官方文档翻译/创建托管对象.md)
     * [核心类总结]()
     * [4. NSPersistentStore](Storage/CoreData/NSPersistentStore.md)
 * [第九章 多线程](Thread/chapter9.md)
