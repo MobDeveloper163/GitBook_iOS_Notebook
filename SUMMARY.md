@@ -34,6 +34,7 @@
   * [Core Data](Storage/CoreData/README.md)
     * [1. Core Data概念和基本使用](Storage/CoreData/CoreData概念及基本使用.md)
     * [2. 托管对象模型的迁移](Storage/CoreData/托管对象模型的迁移.md)
+    * [3. NSPersistentStore](Storage/CoreData/NSPersistentStore.md)
 * [第九章 多线程](Thread/chapter9.md)
   * [01-NSThread](Thread/NSThread.md)
   * [02-NSOperation](Thread/NSOperation.md)
