@@ -38,6 +38,7 @@
       * [什么是Core Data](Storage/CoreData/官方文档翻译/什么是CoreData.md)
       * [创建托管对象模型](Storage/CoreData/官方文档翻译/创建托管对象模型.md)
       * [初始化Core Data栈](Storage/CoreData/官方文档翻译/初始化CoreDataStack.md)
+      * [创建和存储托管对象](Storage/CoreData/官方文档翻译/创建和存储托管对象.md)
     * [核心类总结]()
     * [4. NSPersistentStore](Storage/CoreData/NSPersistentStore.md)
 * [第九章 多线程](Thread/chapter9.md)
