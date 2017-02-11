@@ -41,6 +41,7 @@
       * [创建和存储托管对象](Storage/CoreData/官方文档翻译/创建和存储托管对象.md)
       * [创建和更新自定义的托管对象](Storage/CoreData/官方文档翻译/创建和更新自定义的托管对象.md)
       * [拉取对象](/Storage/CoreData/官方文档翻译/拉取对象.md)
+      * [连接模型到视图](Storage/CoreData/官方文档翻译/模型连接到视图.md)
     * [核心类总结]()
     * [4. NSPersistentStore](Storage/CoreData/NSPersistentStore.md)
 * [第九章 多线程](Thread/chapter9.md)
