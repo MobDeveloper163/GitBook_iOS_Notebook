@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [作者简历](About/关于作者.md)
 * [第一章 C语言](C语言/chapter1.md)
+  * [哈哈哈](C语言/哈哈哈.md)
 * [第二章 Objective-C](Objective-C/Objective-C.md)
   * [数据类型](Objective-C/数据类型.md)
   * [属性](Objective-C/property.md)
@@ -42,7 +43,7 @@
       * [创建和更新自定义的托管对象](Storage/CoreData/官方文档翻译/创建和更新自定义的托管对象.md)
       * [拉取对象](/Storage/CoreData/官方文档翻译/拉取对象.md)
       * [连接模型到视图](Storage/CoreData/官方文档翻译/模型连接到视图.md)
-    * [核心类总结]()
+    * 核心类总结
     * [4. NSPersistentStore](Storage/CoreData/NSPersistentStore.md)
 * [第九章 多线程](Thread/chapter9.md)
   * [01-NSThread](Thread/NSThread.md)
@@ -88,8 +89,7 @@
     * [获取图片](Multimedia/images/获取图片.md)
   * [视频](Multimedia/videos/视频.md)
     * [获取视频](Multimedia/videos/获取视频.md)
-* * [1. Audio Session](Multimedia/AudioSession.md)
-  * [2. AVAudioPlayer](Multimedia/AVAudioPlayer.md)
+* [1. Audio Session2. AVAudioPlayer](Multimedia/AudioSession.md)
 * [第十七章 版本控制工具](版本控制工具/chapter17.md)
   * [Git](版本控制工具/git.md)
 * [第十八章 Popular Sites](PopularWebsites/chapter18.md)
@@ -110,6 +110,4 @@
 * [第二十二章 我的文章](我的文章/chapter22.md)
   * [CocoaPods安装](我的文章/iOS/CocoaPods安装.md)
   * [创建自己的CocoaPods](我的文章/iOS/创建自己的CocoaPods.md)
-
-
 
