@@ -1,6 +1,8 @@
-> _翻译自 _：[Introduction to MVVM](https://www.objc.io/issues/13-architecture/mvvm/)
->_（注：没有完全翻译全文，只是翻译了和MVVM真正相关的部分)_
+ #MVVM初见
+ 
+ _译自 _：[Introduction to MVVM](https://www.objc.io/issues/13-architecture/mvvm/)_（注：没有完全翻译全文，只是翻译了和MVVM真正相关的部分)_
 
+---
 
 ## 什么是MVVM?
 
