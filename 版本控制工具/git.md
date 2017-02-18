@@ -1,9 +1,10 @@
 # Git的基本使用
 
+---
+
 ## 创建Git仓库
 
-### 创建Git仓库有两种途径
-
+##### 创建Git仓库有两种途径
 1. 把现有的工程或者文件夹导入到Git中
 2. 从另一个服务器克隆一个Git仓库
 
@@ -139,7 +140,7 @@ Changes not staged for commit:（意思是说工作目录中被追踪的文件�
 > 
 > doc\/\*\*\/\*.pdf
 
-### 查看staged和unstaged文件
+* ### 查看staged和unstaged文件
 
 使用git diff不添加任何参数，查看已经更改，但是还没有staged的文件。这个命令比较你的工作空间和staging区域里的文件。
 
@@ -149,7 +150,7 @@ Changes not staged for commit:（意思是说工作目录中被追踪的文件�
 
 git diff -cached 到目前为止所有staged的文件
 
-### 提交变化
+* ### 提交变化
 
 现在你的staging area已经配置成了你希望的方式，你可以提交你的更改了。记住所有未staged的文件—任意你创建、更改但是还没有执行git add命令—并不会在此次提交中。
 
@@ -165,7 +166,7 @@ $ git commit -a -m 'added new benchmarks'
 
 ## 简单快速的消除错误
 
-### 移除文件
+* ### 移除文件
 
 从Git移除一个文件，你必须从tracked文件中移除（更准确的是从你的staging区域移除），然后再提交。git rm命令做这个事情，并从你的工作目录移除这个文件，因此在下一次提交时，你不会看到一个它作为untracked file出现。
 
@@ -225,7 +226,7 @@ $ git rm log/*.log（移除log文件夹下所有的.log文件）
 $ git rm \*~（移除所有文件名以~结尾的文件）
 ```
 
-### 移动文件
+* ### 移动文件
 
 如果你想重新命名一个文件，你可以像这样运行：
 
@@ -243,7 +244,7 @@ $ git add README
 
 ## 浏览工程历史记录
 
-### 查看提交历史
+* ### 查看提交历史
 
 当你创建了若干的提交，或者你克隆了存在提交历史的仓库后，你可能希望会过去查看到底发生了什么。最基本。最强大的工具是运行git log命令
 
@@ -273,7 +274,7 @@ $ git add README
 > 
 > first commit
 
-### 撤销提交
+* ### 撤销提交
 
 > **$** git commit -m 'initial commit'
 > 
@@ -281,7 +282,7 @@ $ git add README
 > 
 > **$** git commit --amend（第二次提交会覆盖第一次提交，Git只记录第二次的提交结果）
 
-### Unstage一个staged文件
+* ### Unstage一个staged文件
 
 例如你更改了两个文件，然后想把他们分成两部分提交，但是你已经使用git add \*命令stage了这两个文件。你怎样unstage其中的一个呢？git status提醒你：
 
@@ -325,7 +326,7 @@ $ git add README
 > 
 > modified: CONTRIBUTING.md
 
-### unmodified一个modified文件
+* ### unmodified一个modified文件
 
 如果你不想保留在文件中的更改。你怎样简单地取消更改 — 回退到最后提交时的样子。幸运的是git status告诉你应该怎样做。
 
@@ -359,55 +360,59 @@ renamed: README.md -&gt; README
 
 ## 从远程仓库拉取和推送
 
-## 远程工作
+* ## 远程工作
 
-### git remote 显示所有的远程服务器的短名称
+   * ### git remote 显示所有的远程服务器的短名称
+      ```
+       **$** git remote
+       
+       origin （连接到的服务器的短名称）
+      ```
 
-> **$** git remote
-> 
-> origin （连接到的服务器的短名称）
+   * ### git remote -v 显示所有远程服务器的完整url地址
+      
+      ```
+       **$** git remote -v （连接到的服务器的短名称和url地址）
+          
+       origin https:\/\/github.com\/schacon\/ticgit \(fetch\)（从服务器读取数据的url地址）
+          
+       origin https:\/\/github.com\/schacon\/ticgit \(push\) （向服务器写入数据的url地址）
+      ```
+   * ### 添加远程仓库
 
-### git remote -v 显示所有远程服务器的完整url地址
+   ```
+    **$** git remote add pb https:\/\/github.com\/paulboone\/ticgit 
+    **$** git remote -v
+       
+    ```
 
-> **$** git remote -v （连接到的服务器的短名称和url地址）
-> 
-> origin https:\/\/github.com\/schacon\/ticgit \(fetch\)（从服务器读取数据的url地址）
-> 
-> origin https:\/\/github.com\/schacon\/ticgit \(push\) （向服务器写入数据的url地址）
+   * ### 从远程服务器拉取数据
 
-### 添加远程仓库
+      git fetch  \[remote-name\] 从远程服务器获取所有的本地没有的数据。之后你会拥有远程所有的分支，可以在任意时间检查和合并。fetch只从服务器只下载数据到本地仓库。它不会自动合并或修改你任何的文件。你必须在你准备时手动合并。
 
-> **$** git remote add pb https:\/\/github.com\/paulboone\/ticgit
-> 
-> **$** git remote -v
+      如果你当前的分支设置了跟踪远程分支，你可以使用git pull命令，自动fetch和合并远程分支和本地分支。
 
-### 从远程服务器拉取数据
+   * ### 推送数据到服务器
 
-git fetch  \[remote-name\] 从远程服务器获取所有的本地没有的数据。之后你会拥有远程所有的分支，可以在任意时间检查和合并。fetch只从服务器只下载数据到本地仓库。它不会自动合并或修改你任何的文件。你必须在你准备时手动合并。
+      git push origin master（origin远程服务器的短名称 master是分支名称）
 
-如果你当前的分支设置了跟踪远程分支，你可以使用git pull命令，自动fetch和合并远程分支和本地分支。
+      如果在你push数据到服务器的时候，其他人已经先push了文件到服务器，此时你的push操作会被拒绝。因此你需要先fetch，并且合并到你自己的文件中，然后才能push。
 
-### 推送数据到服务器
+   * ### 查看远程
 
-git push origin master（origin远程服务器的短名称 master是分支名称）
+   ```
+      git remote show origin
+   ```
 
-如果在你push数据到服务器的时候，其他人已经先push了文件到服务器，此时你的push操作会被拒绝。因此你需要先fetch，并且合并到你自己的文件中，然后才能push。
+   * ### 移除和重命名远程服务器
 
-### 查看远程
+   ```
+      $ git remote rename pb paul（把pb命名为paul）
+   ```
 
-```
-git remote show origin
-```
-
-### 移除和重命名远程服务器
-
-```
-$ git remote rename pb paul（把pb命名为paul）
-```
-
-```
-$ git remote rm paul（移除paul）
-```
+   ```
+      $ git remote rm paul（移除paul）
+   ```
 
 ## 标签
 
