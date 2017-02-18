@@ -148,3 +148,5 @@ SpecEnd
 我们已经涵盖很多了：从MVC衍生的MVVM，两者如何兼容的示例，从可测试性查看MVVM,看到了MVVM和绑定机制一起能够很好的工作。假如你有兴趣学习更多关于MVVM的知识，你可以查看[这篇博客](http://www.teehanlax.com/blog/model-view-viewmodel-for-ios/)，非常详细的解释了MVVP的优点，或者[这篇文章](http://www.teehanlax.com/blog/krush-ios-architecture/)，关于我们怎样在现有的工程中使用MVVM取得了很大的成功。我同时有完整的测试，基于MVVM叫做[C-41](https://github.com/AshFurrow/C-41)的开放源。检出它，如果有问题[请让我知道](https://twitter.com/ashfurrow)。
 
 > 相关推荐：[MVC vs MVVM](http://www.jianshu.com/p/d9d39e4798ce
+
+### The End
