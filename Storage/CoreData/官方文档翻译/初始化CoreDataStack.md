@@ -48,7 +48,7 @@ Core Data栈(Stack）是一个框架对象的集合，这些对象作为初始�
 ```
 
 ## 托管对象模型（NSManagedObjectModel）
-`NSManagedObjectModel`描述Core Data即将要访问的数据。在Core Data栈创建期间，作为的创建栈的第一步，`NSManagedObjectModel`(通常称为“mom”)被加载到内存中。依赖于应用的结构，可能但是不常见，`NSPersistentStoreCoordinator`协调多个持久存储（persistent store）。
+`NSManagedObjectModel`描述Core Data即将要访问的数据。在Core Data栈创建期间，作为栈创建的第一步，`NSManagedObjectModel`(通常称为“mom”)被加载到内存中。依赖于应用的结构，可能但是不常见，`NSPersistentStoreCoordinator`协调多个持久存储（persistent store）。
 
 鉴于托管对象模型定义了数据结构，持久存储协调器把持久存储中的数据转换成对象并且传递给请求中的托管对象上下文。持久存储协调器同时验证持久存储中的数据和托管对象模型中定义的是否相匹配。
 
